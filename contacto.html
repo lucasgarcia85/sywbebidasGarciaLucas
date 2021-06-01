@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SyW Contactenos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Venta de vinos sofisticados.Bebidas destiladas,espirituosas.Contactenos por Email o telefono.Ventas minoristas y mayoristas.Envios.Newsletter.Monte Grande.Canning">
+    <meta name="keywords" content="Contacto, email, correo, newsletter, canning, monte grande, consultas, venta, mayor, menor, vinos, sofisticados, espirituosas, promociones">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+    
+    <header id="header">
+        <div class="header__barrasuperior">
+
+            <div>
+                <img src="img/home/logowh.png" alt="Logo S&W Bebidas" title="S&W Bebidas" id="header__logo">
+            </div> 
+                        
+            <div>
+                <img src="img/home/sywbebidaslogo.png" alt="foto direccion web" title="Syw-bebidas.com.ar" id="header__logoweb"> 
+            </div>
+        </div>
+        <div class="header__navega">
+            <nav class="navbar navbar-expand-lg navbar-light bg-xxxx">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/home/logowh.png" alt="Logo S&W Bebidas" title="S&W Bebidas" id="header__logonav"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="vinos.html">Vinos</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="vinos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vinos</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something </a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="espirituosas.html">Espirituosas</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="espirituosas.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Espirituosas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                   
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
+    
+    </header>
+
+        
+    <main>
+
+        <!-- comienza main y contenido de pagina    -->    
+        <div class="fondoTituloContacto">
+            <h1 class="center">Dejenos sus datos o sus consultas</h1>
+        </div>
+
+        <div class="contenedor"> 
+
+
+            <div class="contacto">
+                <section class="contacto__form">
+                
+                    <form action="enviar.php" method="POST" enctype="application/x-www-form-urlencoded" class="center">
+                        
+                        <label for="name"> Ingrese su Nombre <sup>*</sup></label> <br>
+                        <input type="text" name="nombre" id="name" class="forminputs" required/>
+                        <br>
+                        <br>
+                        <label for="telefono"> Ingrese su Telefono<sup>*</sup></label> <br>
+                        <input type="tel" name="teléfono" id="telefono" class="forminputs" required/>
+                        <br>
+                        <br>
+                        <label for="email"> Ingrese su Email<sup>*</sup></label> <br>
+                        <input type="email" name="email" id="email"class="forminputs" required/>
+                        <br>
+                        <br>    
+                        <label for="text">Deje su consulta</label> <br>
+                        <textarea name="text" cols="30" rows="5" id="text" class="forminputs" placeholder="Hola, Quiero que me contacten.Gracias"></textarea> 
+                        <br>
+                        <br>
+                                            
+                        <label for="aceptar">Quiero que me contacten solo por Email</label>
+                        <input type="checkbox" name="aceptar"value="1" id="aceptar">
+                        <br>
+                        <br>
+
+                        <label for="cantidad">Tipo de Compra</label>
+                        <br>
+                        
+                        <select name="cantidad">
+                            <option value=""> Minorista</option>
+                            <option value=""> Mayorista</option>
+                        </select>   
+                        <br> 
+                        <br>
+                                                        
+                        <input type="submit"/> 
+                        <input type="reset" value="Limpiar Formulario"/><br>
+                    
+                    
+                    </form>   
+
+                </section>
+
+                <section class="contacto__maps">
+
+                    <div>
+                    
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.0078421150733!2d-58.50499078526328!3d-34.856030278397824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd6d3fe2fcafb%3A0xaf7873e36e96b90c!2sMariano%20Castex%201002%2C%20Canning%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1618500028569!5m2!1ses!2sar"   style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div id="direccion">
+                            <p>Rodriguez 245 Monte Grande, Buenos Aires</p>
+                        </div>
+                    </div>  
+                
+                </section>
+                 
+            </div>
+
+            <section class="newsLetter">
+
+                <div class="center">
+                <p class="center"> <span class="fas fa-at" type="text"> </span>
+                    Ingrese mail para recibir Newsletter </p>  
+                <input class="forminputs" type="text"><input type="submit"/> 
+            </section>         
+                
+        </div>    
+
+        </main>
+        <!-- finalizado el main    -->   
+                
+        <!-- comienzo del footer -->
+       
+        <footer class="footer">
+            <div class="footer__redes">
+                <div>
+                    <a href="#"><span class="fab fa-whatsapp"></span></a>
+                    <a href="#"><span class="fab fa-facebook"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="mailto:Sywbebidas@gmail.com"><span class="fas fa-envelope"></span></a>
+
+                </div>
+
+                <div>
+                    <p> Copyright S&W Bebidas. Desarrollos Web LGB</p>
+                        
+                </div>
+            </div>
+            <div class="footer__icontop">
+                <a href="#header" class="back_to_top"><i class="fas fa-angle-double-up"></i></a>
+            </div>
+        </footer>   
+            
+        <!-- fin footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

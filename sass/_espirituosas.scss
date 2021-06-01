@@ -1,0 +1,47 @@
+
+.fondoTituloEspirituosas{
+    background-image: url(../img/spirits/fondoespirituosas.jpg);
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height: $anchoDivTitulo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+
+.gridEspirituosas__texto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:40px;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.gridEspirituosas__images{
+    width: 80%;
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    margin:0 auto;
+    
+    }
+.gridEspirituosas__images--size{
+    width: 70%;
+    
+}
+
+.gridEspirituosas__texto__listaSquareInside {
+    list-style-type: none ;
+    list-style-position:outside;
+    text-align: center;
+        li{
+            margin-top:  5px;
+        }
+}

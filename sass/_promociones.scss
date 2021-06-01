@@ -1,0 +1,24 @@
+.fondoTituloPromociones{
+    background-image: url(../img/promos/fondopromos2.jfif);
+    background-size: cover;
+    width: 100%;
+    height: $anchoDivTitulo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.promos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.promos__fotos{
+    width:30%;
+    min-width: 320px;
+    height: 500px;
+    padding: 15px;
+}
