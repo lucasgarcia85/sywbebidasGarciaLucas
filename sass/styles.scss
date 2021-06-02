@@ -97,6 +97,33 @@ main{
     
 }
 
+.descarga {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+       .descarga__bot{
+        margin: 0px 30px;
+        background-color: $colornavegador;
+        padding:  5px;
+        text-decoration: none;
+        color:white;
+        border: 2px solid black;
+            i{
+                margin-right: 5px;
+            }
+        }
+
+  
+        .descarga__bot:hover {
+            color:$colorhover ;
+        
+        }  
+    
+    
+        
+}
+
 
 .carouselSize div img{
     height: 90%;
@@ -246,7 +273,7 @@ main{
       }
   
       /********************* VINOS **************/
-      .gridVinos{
+      .vinos .vinos__infoImagenes{
           display: grid;
           grid-template-columns: 1fr;
           grid-gap: 30px;
@@ -256,7 +283,6 @@ main{
       }
 
       .img-fluid{
-          width:70%;
           margin: 10px 0px;
           
       }
