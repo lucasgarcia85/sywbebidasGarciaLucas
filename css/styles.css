@@ -96,23 +96,6 @@
   height: 500px;
   padding: 15px; }
 
-.gridVinos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-  margin: 0 auto;
-  justify-content: center;
-  align-content: center; }
-  .gridVinos article {
-    margin-top: 15px;
-    margin-bottom: 15px; }
-    .gridVinos article img {
-      height: auto;
-      width: 100%; }
-  .gridVinos .gridVinos__videos iframe {
-    width: 100%;
-    height: 340px; }
-
 .fondoTituloVinos {
   background-image: url(../img/vinos/fondovino2.jpg);
   background-position: center;
@@ -122,6 +105,25 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 0px; }
+
+.vinos .vinos__infoImagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px; }
+  .vinos .vinos__infoImagenes img {
+    width: 100%;
+    height: 350px; }
+  .vinos .vinos__infoImagenes iframe {
+    width: 100%;
+    height: 350px; }
+
+.vinos .vinos__definicion {
+  font-size: .9rem; }
+
+.vinos hr {
+  margin: 30px 0px 30px 0px;
+  height: 2px;
+  background-color: black; }
 
 .footer {
   display: flex;
@@ -309,6 +311,22 @@ h4 {
   justify-content: center;
   margin-bottom: 20px; }
 
+.descarga {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .descarga .descarga__bot {
+    margin: 0px 30px;
+    background-color: #924921;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid black; }
+    .descarga .descarga__bot i {
+      margin-right: 5px; }
+  .descarga .descarga__bot:hover {
+    color: #ffee00; }
+
 .carouselSize div img {
   height: 90%;
   width: 90%; }
@@ -391,7 +409,7 @@ h4 {
   .gridEspirituosas__images {
     grid-template-columns: 1fr 1fr; }
   /********************* VINOS **************/
-  .gridVinos {
+  .vinos .vinos__infoImagenes {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
@@ -399,7 +417,6 @@ h4 {
     align-content: center;
     height: auto; }
   .img-fluid {
-    width: 70%;
     margin: 10px 0px; }
   /**************PAGINA CONTACTO ************/
   .contacto__form {
