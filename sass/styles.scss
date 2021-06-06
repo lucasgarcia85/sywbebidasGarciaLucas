@@ -40,8 +40,8 @@ main{
       font-weight: 600;
       font-style: oblique;
       text-transform: uppercase;
-      border-radius: 5px;
-      -webkit-text-stroke: 2px black;
+      
+      
      
     }
   
@@ -133,8 +133,7 @@ main{
 .flex {
     display:flex;
     flex-flow: row wrap;
-    align-items:center;
-    justify-items: center;
+    justify-content: space-around;
     margin:40px auto;
     p{
         width: 40%;
@@ -157,6 +156,14 @@ main{
 #iframeindex{
     width: 40%;
     height: 300px;
+}
+
+.tarjetas{
+    width: 40%;
+}
+.titulomedios{
+    background-color: $colornavegador;
+    color: white;
 }
 
 

@@ -56,18 +56,6 @@
   align-content: center;
   justify-content: center; }
 
-.gridEspirituosas__images {
-  width: 80%;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-content: center;
-  justify-items: center;
-  margin: 0 auto; }
-
-.gridEspirituosas__images--size {
-  width: 70%; }
-
 .gridEspirituosas__texto__listaSquareInside {
   list-style-type: none;
   list-style-position: outside;
@@ -125,6 +113,31 @@
   height: 2px;
   background-color: black; }
 
+.productos {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 5px;
+  width: 100%; }
+  .productos .productos__box {
+    width: 10rem; }
+    .productos .productos__box .productos__box--img {
+      width: 100%; }
+    .productos .productos__box .productos__box--item {
+      background-color: lightsalmon;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px; }
+    .productos .productos__box .productos__box--btn {
+      text-decoration: none;
+      background-color: #d3c471;
+      border-radius: 10px;
+      color: white;
+      padding: 10px; }
+
 .footer {
   display: flex;
   flex-flow: row nowrap;
@@ -149,7 +162,7 @@
       font-size: 30px;
       transition: all .3s; }
     .footer .footer__redes div a span:hover {
-      color: #ffee00;
+      color: #571616;
       transform: scale(1.3);
       transition: all .3s; }
   .footer .footer__icontop .back_to_top {
@@ -160,7 +173,7 @@
     scroll-behavior: smooth;
     transition: all .3s; }
     .footer .footer__icontop .back_to_top :hover {
-      color: #ffee00;
+      color: #571616;
       animation: arrowup 1s linear 0s infinite;
       transition: all .3s; }
 
@@ -177,7 +190,7 @@
     transform: translateY(5px); } }
 
 .header__barrasuperior {
-  background: linear-gradient(180deg, #1f120b 0%, #3a2114 25%, #924921 100%);
+  background: #0a0a0a;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -186,7 +199,7 @@
 
 /*******ADAPTACION DEL NAVBAR DE BOOTSTRAP***********/
 .header__navega {
-  background-color: #924921; }
+  background-color: #e7e7e7; }
 
 .container-fluid {
   width: 70%; }
@@ -195,19 +208,23 @@
   text-align: center; }
 
 .navbar-light .navbar-toggler {
-  background-color: #ffe44e;
-  color: #ffe44e;
-  border-color: #ffe44e; }
+  background-color: #ffffff;
+  color: #ffffff;
+  border-color: #98989a; }
+
+.navbar-light .navbar-toggler:focus {
+  box-shadow: none; }
 
 .navbar-light .navbar-nav .nav-link.active {
   border-bottom: solid 2px;
-  color: white; }
+  color: black; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: white; }
+  color: black; }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffee00; }
+  color: #571616;
+  font-weight: bold; }
 
 .navbar-nav {
   display: flex;
@@ -265,13 +282,11 @@ p {
   line-height: 1.7rem; }
 
 h1 {
-  color: #e1ec46;
+  color: white;
   font-size: 2.4rem;
   font-weight: 600;
   font-style: oblique;
-  text-transform: uppercase;
-  border-radius: 5px;
-  -webkit-text-stroke: 2px black; }
+  text-transform: uppercase; }
 
 .textoDerecha {
   text-align: right; }
@@ -317,7 +332,7 @@ h4 {
   justify-content: center; }
   .descarga .descarga__bot {
     margin: 0px 30px;
-    background-color: #924921;
+    background-color: #e7e7e7;
     padding: 5px;
     text-decoration: none;
     color: white;
@@ -325,7 +340,7 @@ h4 {
     .descarga .descarga__bot i {
       margin-right: 5px; }
   .descarga .descarga__bot:hover {
-    color: #ffee00; }
+    color: #571616; }
 
 .carouselSize div img {
   height: 90%;
@@ -334,8 +349,7 @@ h4 {
 .flex {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-  justify-items: center;
+  justify-content: space-around;
   margin: 40px auto; }
   .flex p {
     width: 40%;
@@ -352,6 +366,13 @@ h4 {
 #iframeindex {
   width: 40%;
   height: 300px; }
+
+.tarjetas {
+  width: 40%; }
+
+.titulomedios {
+  background-color: #e7e7e7;
+  color: white; }
 
 /*****************************MEDIA QUERYS***************************************/
 /*****************************MEDIA QUERYS***************************************/
@@ -434,7 +455,7 @@ h4 {
   .footer .footer__icontop .back_to_top {
     animation: arrowup 2s linear 0s infinite;
     transition: all .3s;
-    color: #ffee00;
+    color: #571616;
     font-size: 2.2rem; }
     .footer .footer__icontop .back_to_top :hover {
       animation: disabled; } }
@@ -464,7 +485,7 @@ h4 {
     align-items: center; }
   .footer .footer__icontop .back_to_top {
     font-size: 2rem;
-    color: #ffee00; }
+    color: #571616; }
   /****************INDEX*******************/
   #header__logowebhome {
     animation: translatelogoweb 1s linear .2s; }
