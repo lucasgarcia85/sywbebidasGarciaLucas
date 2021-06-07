@@ -1,5 +1,5 @@
 .header__barrasuperior{
-    background: linear-gradient(180deg, rgba(31,18,11,1) 0%, rgba(58,33,20,1) 25%, rgba(146,73,33,1) 100%);
+    background:rgb(10, 10, 10);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,7 +27,14 @@
     .navbar-toggler {
     background-color: $colornavegadoritems;
     color: $colornavegadoritems;
-    border-color: $colornavegadoritems;}
+    border-color: $colorhamburguesaborde;}
+        
+    .navbar-toggler:focus{
+            box-shadow:none;
+        }
+
+    
+
     .navbar-nav{
         .nav-link.active {
             border-bottom: solid 2px;
@@ -36,8 +43,8 @@
         .nav-link {
                 color: $colornavegadoritemsactivo;}
         .nav-link:hover {
-                
-                color: $colorhover;}
+                color: $colorhover;
+                font-weight:bold                   }
                 
     }
 }
