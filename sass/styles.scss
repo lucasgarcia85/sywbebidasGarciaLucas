@@ -85,15 +85,19 @@ main{
   /************** INDEX *********************/
   
   .fondoTituloHome{
-    background-image: url(../img/home/fondohome2.jpg);
+    background-image: url(../img/home/fondohome.jpg);
     background-position:center;
-    background-attachment: fixed;
     width: 100%;
     height: $anchoDivTitulo;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    
+}
+
+.quienesSomos{
+    margin: 50px 0px;
     
 }
 
@@ -134,7 +138,7 @@ main{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin:40px auto;
+    margin:40px 0px;
     p{
         width: 40%;
         margin: 30px;
@@ -144,26 +148,40 @@ main{
     }
 }
 
-#imghome1{
-    width: 40%;
-    
-}
 
-#imghome2{
-    width: 40%;
-
-}
 #iframeindex{
     width: 40%;
     height: 300px;
 }
 
-.tarjetas{
-    width: 40%;
-}
-.titulomedios{
+.recetas{
     background-color: $colornavegador;
-    color: white;
+    padding: 20px;
+        div details{
+            margin: 5px 0px;
+                
+        }
+        h2{
+          text-align: center;
+        }
+        p{
+          text-align: center;
+        }
+        .recetas__grid{
+            display:grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            
+        }
+}
+    
+
+
+.tarjetas{
+    width: 35%;
+    min-width: 300px;
+    margin: 20px 0px;
 }
 
 
@@ -171,36 +189,17 @@ main{
   /*****************************MEDIA QUERYS***************************************/
   
   
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   
-    //   header nav ul{
-    //       flex-direction:column;
-    //   }
-    //   header nav ul li:hover ul{
-    //       display: none;
-    //   }
-  
-    //   header nav ul li{
-    //       display: flex;
-    //       flex-direction: column;
-  
-    //   }
-  
-    //   header nav ul li{
-  
-    //       width:100%;
-    //       margin-right:0;
-    //   }
-  
+      
       
       .activo{
           text-decoration: underline;
           color: white;
-      }
+         }
   
       
       .header__barrasuperior{
-          background-color: #3a2114;
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
@@ -208,127 +207,126 @@ main{
           align-items: center;
           }
   
-      .footer .footer__redes{
-          height: 8rem;
-          padding: 0rem;
-          background-color:#3a2114;
-          color:white;
-          font-size:1rem;
-          display: flex ;
-          flex-flow: column wrap;
-          justify-content:center;
-          align-items:center;
-      }
-      
-      section article img{
-              width: 100%;
-      }
-      section iframe{
-              width: 100%;
-      }
+            
+        section article img{
+                width: 100%;
+        }
+        section iframe{
+                width: 100%;
+        }
   
       
 
-      .flex{
+        .flex{
           justify-content: center;
           p{
             width: 100%;
             margin: 30px;
             line-height: 30px;
             text-align: justify;}
-      }
+         }
 
    
-      #header__logo{
+         #header__logo{
           display: none;
-      }   
-      #header__logonav{
+         }   
+        #header__logonav{
           width:6rem;
           padding:2px;
           display: flex;
-      } 
+        } 
 
-      .carouselSize div img{
+        .carouselSize div img{
         height: 100%;
         width: 100%;
         
-    }
+        }
             
-      #imghome1{
-          width:100%;
-         
-      }
-      
-      #imghome2{
-          width: 100%;
-         
-      }
-      #iframeindex{
-          width: 100%;
-          height: 300px;
         
-      }
+        #iframeindex{
+        width: 100%;
+        height: 300px;
+        
+        }
+
+      .recetas .recetas__grid {
+            grid-template-columns: 1fr;
+            justify-items: start;
+        
+        
+        }
   
    
       /***********pagina Espirituosas***********/
-      .gridEspirituosas__texto{
+        .gridEspirituosas__texto{
           grid-template-columns: 1fr;
-      }
+        }
   
-      .gridEspirituosas__images{
+        .gridEspirituosas__images{
           grid-template-columns: 1fr 1fr;
-      }
+        }
   
       /********************* VINOS **************/
-      .vinos .vinos__infoImagenes{
+        .vinos .vinos__infoImagenes{
           display: grid;
           grid-template-columns: 1fr;
           grid-gap: 30px;
           justify-content: center;
           align-content: center;
           height: auto;
-      }
+        }
 
-      .img-fluid{
+        .img-fluid{
           margin: 10px 0px;
           
-      }
+        }
   
       /**************PAGINA CONTACTO ************/
   
-    .contacto__form{
+        .contacto__form{
           margin-right: 15px;
           margin-bottom: 25px;
-      }
+        }
       
-    .contacto__maps{
+        .contacto__maps{
           margin-left: 15px;
           margin-bottom: 25px;
-      }
+        }
   
-    .newsLetter{
+        .newsLetter{
           margin-bottom: 20px;
           margin-top: 10px;
            div .forminputs{
             width: 70%; }
-         }
+        }
      
 /*****footer**********/
 
-    .footer .footer__icontop .back_to_top{
-            animation: arrowup 2s linear 0s infinite; 
-            transition: all .3s;
-            color: $colorhover;
-            font-size: 2.2rem;
-                :hover{
-                    animation:disabled
-                }
-                
+    .footer {
+    
+            .footer__icontop .back_to_top{
+                    animation: arrowup 2s linear 0s infinite; 
+                    transition: all .3s;
+                    color: $colorhover;
+                    font-size: 2.2rem;
+                        :hover{
+                            animation:disabled
+                        }
+                        
+            }
+    
+
+            .footer__redes{
+                    display: flex ;
+                    flex-flow: column wrap;
+                    height: 8rem;
+                    font-size:0.9rem;
+                    
             }
 }
   
   /**************************480px**********************/
-  @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   
         
       .activo{
@@ -339,7 +337,6 @@ main{
   
       
       .header__barrasuperior{
-          background-color: #3a2114;
           display: flex;
           flex-direction: row;
           flex-wrap: nowrap;
@@ -352,15 +349,8 @@ main{
       .footer {
       
             .footer__redes{
-            height: 8rem;
-            padding: 0rem;
-            background-color:#3a2114;
-            color:white;
-            font-size:1rem;
-            display: flex ;
-            flex-flow: column wrap;
-            justify-content:center;
-            align-items:center;
+            font-size:0.8rem;
+           
             }
             .footer__icontop .back_to_top{
                 font-size: 2rem;
@@ -368,7 +358,7 @@ main{
                 }
         }
 
-              
+    }             
   /****************INDEX*******************/
   
       #header__logowebhome{
@@ -403,7 +393,13 @@ main{
       section iframe{
               width: 100%;
       }
-  
+
+      .tarjetas{
+        width: 90%;
+        min-width: 300px;
+        margin: 20px 0px;
+    }
+
       /*********** pagina Contacto**************/
   
       .contacto__form{
@@ -433,4 +429,4 @@ main{
       .gridEspirituosas__images{
           grid-template-columns: 1fr;
         }
-    }
+}

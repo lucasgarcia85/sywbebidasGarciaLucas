@@ -151,7 +151,7 @@
     width: 100%;
     height: 6rem;
     padding: 0rem;
-    background-color: #3a2114;
+    background-color: #000000;
     color: white;
     font-size: .9rem; }
     .footer .footer__redes div a span {
@@ -316,15 +316,17 @@ h4 {
 /* fin clases generales */
 /************** INDEX *********************/
 .fondoTituloHome {
-  background-image: url(../img/home/fondohome2.jpg);
+  background-image: url(../img/home/fondohome.jpg);
   background-position: center;
-  background-attachment: fixed;
   width: 100%;
   height: 175px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px; }
+
+.quienesSomos {
+  margin: 50px 0px; }
 
 .descarga {
   width: 100%;
@@ -350,29 +352,36 @@ h4 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin: 40px auto; }
+  margin: 40px 0px; }
   .flex p {
     width: 40%;
     margin: 30px;
     line-height: 30px;
     text-align: justify; }
 
-#imghome1 {
-  width: 40%; }
-
-#imghome2 {
-  width: 40%; }
-
 #iframeindex {
   width: 40%;
   height: 300px; }
 
-.tarjetas {
-  width: 40%; }
-
-.titulomedios {
+.recetas {
   background-color: #e7e7e7;
-  color: white; }
+  padding: 20px; }
+  .recetas div details {
+    margin: 5px 0px; }
+  .recetas h2 {
+    text-align: center; }
+  .recetas p {
+    text-align: center; }
+  .recetas .recetas__grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center; }
+
+.tarjetas {
+  width: 35%;
+  min-width: 300px;
+  margin: 20px 0px; }
 
 /*****************************MEDIA QUERYS***************************************/
 /*****************************MEDIA QUERYS***************************************/
@@ -381,20 +390,9 @@ h4 {
     text-decoration: underline;
     color: white; }
   .header__barrasuperior {
-    background-color: #3a2114;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; }
-  .footer .footer__redes {
-    height: 8rem;
-    padding: 0rem;
-    background-color: #3a2114;
-    color: white;
-    font-size: 1rem;
-    display: flex;
-    flex-flow: column wrap;
     justify-content: center;
     align-items: center; }
   section article img {
@@ -417,13 +415,12 @@ h4 {
   .carouselSize div img {
     height: 100%;
     width: 100%; }
-  #imghome1 {
-    width: 100%; }
-  #imghome2 {
-    width: 100%; }
   #iframeindex {
     width: 100%;
     height: 300px; }
+  .recetas .recetas__grid {
+    grid-template-columns: 1fr;
+    justify-items: start; }
   /***********pagina Espirituosas***********/
   .gridEspirituosas__texto {
     grid-template-columns: 1fr; }
@@ -458,15 +455,19 @@ h4 {
     color: #571616;
     font-size: 2.2rem; }
     .footer .footer__icontop .back_to_top :hover {
-      animation: disabled; } }
+      animation: disabled; }
+  .footer .footer__redes {
+    display: flex;
+    flex-flow: column wrap;
+    height: 8rem;
+    font-size: 0.9rem; }
+  /**************************480px**********************/ }
 
-/**************************480px**********************/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) and (max-width: 480px) {
   .activo {
     text-decoration: underline;
     color: white; }
   .header__barrasuperior {
-    background-color: #3a2114;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -474,18 +475,12 @@ h4 {
     align-items: center;
     height: 50px; }
   .footer .footer__redes {
-    height: 8rem;
-    padding: 0rem;
-    background-color: #3a2114;
-    color: white;
-    font-size: 1rem;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center; }
+    font-size: 0.8rem; }
   .footer .footer__icontop .back_to_top {
     font-size: 2rem;
-    color: #571616; }
+    color: #571616; } }
+
+@media only screen and (max-width: 767px) {
   /****************INDEX*******************/
   #header__logowebhome {
     animation: translatelogoweb 1s linear .2s; }
@@ -511,6 +506,10 @@ h4 {
     width: 100%; }
   section iframe {
     width: 100%; }
+  .tarjetas {
+    width: 90%;
+    min-width: 300px;
+    margin: 20px 0px; }
   /*********** pagina Contacto**************/
   .contacto__form {
     margin-right: 15px;
