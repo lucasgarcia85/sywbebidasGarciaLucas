@@ -8,9 +8,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
-   
 }
-
 .contacto{
     display: flex;
     flex-flow: row wrap;
@@ -24,7 +22,6 @@
             border-radius: 5px;
             }
         }
-         
     .contacto__maps{
         margin-left: 20px;
         div iframe{
@@ -32,9 +29,7 @@
             height: 450px;
         }
     }
-
 }
-
 .newsLetter{
     margin-bottom:30px;
     margin-top:40px;
@@ -42,13 +37,10 @@
             .forminputs{
             width: 30%;
             }
-
             p span{
                 margin-right: 5px;
                 font-size: 30px;
             }
-            
         }
-    
-}
+ }
  

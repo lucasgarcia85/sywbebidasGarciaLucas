@@ -12,7 +12,6 @@
     padding:0px;
     box-sizing: border-box;
   }
-  
 body{
     margin:0px;
     padding:0px;
@@ -20,70 +19,53 @@ body{
     color: rgb(0, 0, 0);
     box-sizing: border-box;
   }
-  
 .contenedor{
       width: $ancho93;
       margin: 0 auto;
     }
-  
-main{
+  main{
       margin: 0rem;
   }
-  
-  p{
+    p{
       line-height: 1.7rem;
   }
-    
   h1 {
       color:$colorh1;
       font-size: 2.4rem;
       font-weight: 600;
       font-style: oblique;
       text-transform: uppercase;
-      
-      
-     
     }
   
   .textoDerecha{
       text-align: right;
-  
   }
-  
   .center{
       text-align: center;
-      
   }
-
   .margintopbott{
       margin-top: 30px;
       margin-bottom: 40px;
   }
-    
-  section article p, section p{
+  section article p{
       text-align: justify;
   }
-  
   h2{
       margin-top: 25px;
       margin-bottom:25px;
-          
   }
    h3{
       margin-top: 15px;
       margin-bottom: 15px;
-  
   }
   h4{
       margin-top: 10px;
       margin-bottom: 10px;
-      
-  }
+   }
     
   /* fin clases generales */
   
   /************** INDEX *********************/
-  
   .fondoTituloHome{
     background-image: url(../img/home/fondohome.jpg);
     background-position:center;
@@ -93,47 +75,34 @@ main{
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    
-}
-
+  }
 .quienesSomos{
     margin: 50px 0px;
-    
-}
-
+  }
 .descarga {
     width: 100%;
     display: flex;
     justify-content: center;
-    
        .descarga__bot{
-        margin: 0px 30px;
-        background-color: $colornavegador;
-        padding:  5px;
-        text-decoration: none;
-        color:white;
-        border: 2px solid black;
-            i{
-                margin-right: 5px;
-            }
-        }
-
-  
+          margin: 0px 30px;
+          background-color: $colornavegador;
+          padding:  5px;
+          text-decoration: none;
+          color:white;
+          border: 2px solid black;
+              i{
+                  margin-right: 5px;
+              }
+          }
         .descarga__bot:hover {
             color:$colorhover ;
-        
         }  
-    
-    
-        
 }
-
 
 .carouselSize div img{
     height: 90%;
     width: 90%;
    }
-
 .flex {
     display:flex;
     flex-flow: row wrap;
@@ -144,61 +113,59 @@ main{
         margin: 30px;
         line-height: 30px;
         text-align: justify;
-
     }
 }
-
-
 #iframeindex{
     width: 40%;
     height: 300px;
 }
-
 .recetas{
     background-color: $colornavegador;
-    padding: 20px;
+    padding: 30px;
         div details{
             margin: 5px 0px;
-                
-        }
+         }
         h2{
-          text-align: center;
-        }
-        p{
           text-align: center;
         }
         .recetas__grid{
             display:grid;
-            gap: 10px;
+            gap: 25px;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             justify-items: center;
-            
-        }
+          }
 }
-    
-
-
+ 
 .tarjetas{
     width: 35%;
     min-width: 300px;
     margin: 20px 0px;
 }
-
-
+.envios{
+  background-color:$colornavegador;
+    .envios__titulo{
+      text-align: center;
+      padding-top: 20px;
+    }
+    .envios__imag{
+      display: flex;
+      justify-content: space-evenly;
+      flex-flow: row nowrap;
+          img{
+            width: 26%;
+            border-radius: 70%;
+            padding: 30px 0px;
+          }
+    }
+  }
   /*****************************MEDIA QUERYS***************************************/
   /*****************************MEDIA QUERYS***************************************/
-  
   
 @media only screen and (max-width: 767px) {
-  
-      
-      
       .activo{
           text-decoration: underline;
           color: white;
          }
-  
-      
       .header__barrasuperior{
           display: flex;
           flex-direction: column;
@@ -206,27 +173,21 @@ main{
           justify-content:center;
           align-items: center;
           }
-  
-            
+     
         section article img{
                 width: 100%;
         }
         section iframe{
                 width: 100%;
         }
-  
-      
-
         .flex{
           justify-content: center;
-          p{
-            width: 100%;
-            margin: 30px;
-            line-height: 30px;
-            text-align: justify;}
+            p{
+              width: 100%;
+              margin: 0px;
+              line-height: 30px;
+              text-align: justify;}
          }
-
-   
          #header__logo{
           display: none;
          }   
@@ -235,29 +196,22 @@ main{
           padding:2px;
           display: flex;
         } 
-
         .carouselSize div img{
         height: 100%;
         width: 100%;
-        
         }
-            
-        
+         
         #iframeindex{
         width: 100%;
         height: 300px;
         
         }
-
       .recetas .recetas__grid {
             grid-template-columns: 1fr;
             justify-items: start;
-        
-        
         }
   
-   
-      /***********pagina Espirituosas***********/
+/***********pagina Espirituosas***********/
         .gridEspirituosas__texto{
           grid-template-columns: 1fr;
         }
@@ -266,22 +220,21 @@ main{
           grid-template-columns: 1fr 1fr;
         }
   
-      /********************* VINOS **************/
-        .vinos .vinos__infoImagenes{
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-gap: 30px;
-          justify-content: center;
-          align-content: center;
-          height: auto;
-        }
-
+/********************* VINOS **************/
+        
         .img-fluid{
           margin: 10px 0px;
-          
+          }
+        .productos {
+          display: grid;
+          grid-template-columns:1fr 1fr;
+                   
+          .productos__box{
+              width: 13rem;
+          }
         }
-  
-      /**************PAGINA CONTACTO ************/
+
+/**************PAGINA CONTACTO ************/
   
         .contacto__form{
           margin-right: 15px;
@@ -299,43 +252,36 @@ main{
            div .forminputs{
             width: 70%; }
         }
-     
 /*****footer**********/
 
     .footer {
-    
-            .footer__icontop .back_to_top{
-                    animation: arrowup 2s linear 0s infinite; 
-                    transition: all .3s;
-                    color: $colorhover;
-                    font-size: 2.2rem;
-                        :hover{
+         .footer__icontop .back_to_top{
+                  animation: arrowup 2s linear 0s infinite; 
+                  transition: all .3s;
+                  color: $colorhover;
+                  font-size: 2.2rem;
+                        &:hover{
                             animation:disabled
                         }
                         
             }
-    
-
             .footer__redes{
                     display: flex ;
                     flex-flow: column wrap;
                     height: 8rem;
                     font-size:0.9rem;
-                    
             }
 }
-  
+ 
   /**************************480px**********************/
 @media only screen and (max-width: 480px) {
   
-        
-      .activo{
+     .activo{
           text-decoration: underline;
           color: white;
   
       }
   
-      
       .header__barrasuperior{
           display: flex;
           flex-direction: row;
@@ -345,7 +291,6 @@ main{
           height: 50px;
           }
   
-      
       .footer {
       
             .footer__redes{
@@ -357,7 +302,6 @@ main{
                 color: $colorhover;
                 }
         }
-
     }             
   /****************INDEX*******************/
   
@@ -379,11 +323,10 @@ main{
           padding:2px;
           display: flex;
       } 
-   
       .flex p{
       
           width: 100%;
-          margin: 10px;
+          margin:0px;
           line-height: 30px;
           text-align: justify;
         }
@@ -399,6 +342,15 @@ main{
         min-width: 300px;
         margin: 20px 0px;
     }
+
+      .envios .envios__imag{
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row nowrap;
+            img{
+              width: 32%;
+            }
+      }
 
       /*********** pagina Contacto**************/
   
@@ -428,5 +380,27 @@ main{
   
       .gridEspirituosas__images{
           grid-template-columns: 1fr;
+        }
+
+        /**************pagina vinos***************/
+        .vinos .vinos__infoImagenes{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 20px;
+          align-content: center;
+          height: auto;
+
+              img{
+                width: 95%;
+                height: 95%;
+                }
+              iframe{
+                width: 95%;
+                height: 250px;
+              }
+          }
+        .productos {
+           display: grid;
+           grid-template-columns: 1fr;
         }
 }

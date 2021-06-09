@@ -97,13 +97,16 @@
 .vinos .vinos__infoImagenes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px; }
+  gap: 25px;
+  justify-items: center; }
   .vinos .vinos__infoImagenes img {
-    width: 100%;
-    height: 350px; }
+    width: 90%;
+    height: 90%;
+    border-radius: 5%; }
   .vinos .vinos__infoImagenes iframe {
-    width: 100%;
-    height: 350px; }
+    width: 90%;
+    height: 350px;
+    border-radius: 5%; }
 
 .vinos .vinos__definicion {
   font-size: .9rem; }
@@ -112,6 +115,15 @@
   margin: 30px 0px 30px 0px;
   height: 2px;
   background-color: black; }
+
+.tituloProductos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e7e7;
+  width: 100%;
+  height: 80px;
+  margin: 30px 0px; }
 
 .productos {
   display: grid;
@@ -122,21 +134,25 @@
   padding: 5px;
   width: 100%; }
   .productos .productos__box {
-    width: 10rem; }
+    width: 10rem;
+    text-align: center; }
     .productos .productos__box .productos__box--img {
       width: 100%; }
     .productos .productos__box .productos__box--item {
-      background-color: lightsalmon;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 10px; }
     .productos .productos__box .productos__box--btn {
       text-decoration: none;
-      background-color: #d3c471;
+      background-color: #252020;
       border-radius: 10px;
       color: white;
-      padding: 10px; }
+      padding: 8px;
+      transition: all .3s; }
+      .productos .productos__box .productos__box--btn:hover {
+        background-color: #c52e29;
+        transition: all .4s; }
 
 .footer {
   display: flex;
@@ -162,7 +178,7 @@
       font-size: 30px;
       transition: all .3s; }
     .footer .footer__redes div a span:hover {
-      color: #571616;
+      color: #c52e29;
       transform: scale(1.3);
       transition: all .3s; }
   .footer .footer__icontop .back_to_top {
@@ -172,8 +188,8 @@
     right: 1rem;
     scroll-behavior: smooth;
     transition: all .3s; }
-    .footer .footer__icontop .back_to_top :hover {
-      color: #571616;
+    .footer .footer__icontop .back_to_top:hover {
+      color: #c52e29;
       animation: arrowup 1s linear 0s infinite;
       transition: all .3s; }
 
@@ -223,7 +239,7 @@
   color: black; }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #571616;
+  color: #c52e29;
   font-weight: bold; }
 
 .navbar-nav {
@@ -298,7 +314,7 @@ h1 {
   margin-top: 30px;
   margin-bottom: 40px; }
 
-section article p, section p {
+section article p {
   text-align: justify; }
 
 h2 {
@@ -342,7 +358,7 @@ h4 {
     .descarga .descarga__bot i {
       margin-right: 5px; }
   .descarga .descarga__bot:hover {
-    color: #571616; }
+    color: #c52e29; }
 
 .carouselSize div img {
   height: 90%;
@@ -365,16 +381,14 @@ h4 {
 
 .recetas {
   background-color: #e7e7e7;
-  padding: 20px; }
+  padding: 30px; }
   .recetas div details {
     margin: 5px 0px; }
   .recetas h2 {
     text-align: center; }
-  .recetas p {
-    text-align: center; }
   .recetas .recetas__grid {
     display: grid;
-    gap: 10px;
+    gap: 25px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center; }
 
@@ -382,6 +396,20 @@ h4 {
   width: 35%;
   min-width: 300px;
   margin: 20px 0px; }
+
+.envios {
+  background-color: #e7e7e7; }
+  .envios .envios__titulo {
+    text-align: center;
+    padding-top: 20px; }
+  .envios .envios__imag {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap; }
+    .envios .envios__imag img {
+      width: 26%;
+      border-radius: 70%;
+      padding: 30px 0px; }
 
 /*****************************MEDIA QUERYS***************************************/
 /*****************************MEDIA QUERYS***************************************/
@@ -403,7 +431,7 @@ h4 {
     justify-content: center; }
     .flex p {
       width: 100%;
-      margin: 30px;
+      margin: 0px;
       line-height: 30px;
       text-align: justify; }
   #header__logo {
@@ -427,15 +455,13 @@ h4 {
   .gridEspirituosas__images {
     grid-template-columns: 1fr 1fr; }
   /********************* VINOS **************/
-  .vinos .vinos__infoImagenes {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
-    justify-content: center;
-    align-content: center;
-    height: auto; }
   .img-fluid {
     margin: 10px 0px; }
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .productos .productos__box {
+      width: 13rem; }
   /**************PAGINA CONTACTO ************/
   .contacto__form {
     margin-right: 15px;
@@ -452,9 +478,9 @@ h4 {
   .footer .footer__icontop .back_to_top {
     animation: arrowup 2s linear 0s infinite;
     transition: all .3s;
-    color: #571616;
+    color: #c52e29;
     font-size: 2.2rem; }
-    .footer .footer__icontop .back_to_top :hover {
+    .footer .footer__icontop .back_to_top:hover {
       animation: disabled; }
   .footer .footer__redes {
     display: flex;
@@ -478,7 +504,7 @@ h4 {
     font-size: 0.8rem; }
   .footer .footer__icontop .back_to_top {
     font-size: 2rem;
-    color: #571616; } }
+    color: #c52e29; } }
 
 @media only screen and (max-width: 767px) {
   /****************INDEX*******************/
@@ -499,7 +525,7 @@ h4 {
     display: flex; }
   .flex p {
     width: 100%;
-    margin: 10px;
+    margin: 0px;
     line-height: 30px;
     text-align: justify; }
   section article img {
@@ -510,6 +536,12 @@ h4 {
     width: 90%;
     min-width: 300px;
     margin: 20px 0px; }
+  .envios .envios__imag {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap; }
+    .envios .envios__imag img {
+      width: 32%; }
   /*********** pagina Contacto**************/
   .contacto__form {
     margin-right: 15px;
@@ -527,4 +559,20 @@ h4 {
   .gridEspirituosas__texto {
     grid-template-columns: 1fr; }
   .gridEspirituosas__images {
+    grid-template-columns: 1fr; }
+  /**************pagina vinos***************/
+  .vinos .vinos__infoImagenes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-content: center;
+    height: auto; }
+    .vinos .vinos__infoImagenes img {
+      width: 95%;
+      height: 95%; }
+    .vinos .vinos__infoImagenes iframe {
+      width: 95%;
+      height: 250px; }
+  .productos {
+    display: grid;
     grid-template-columns: 1fr; } }
