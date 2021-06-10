@@ -116,44 +116,6 @@
   height: 2px;
   background-color: black; }
 
-.tituloProductos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e7e7e7;
-  width: 100%;
-  height: 80px;
-  margin: 30px 0px; }
-
-.productos {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 20px;
-  padding: 5px;
-  width: 100%; }
-  .productos .productos__box {
-    width: 10rem;
-    text-align: center; }
-    .productos .productos__box .productos__box--img {
-      width: 100%; }
-    .productos .productos__box .productos__box--item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px; }
-    .productos .productos__box .productos__box--btn {
-      text-decoration: none;
-      background-color: #252020;
-      border-radius: 10px;
-      color: white;
-      padding: 8px;
-      transition: all .3s; }
-      .productos .productos__box .productos__box--btn:hover {
-        background-color: #c52e29;
-        transition: all .4s; }
-
 .footer {
   display: flex;
   flex-flow: row nowrap;
@@ -411,6 +373,44 @@ h4 {
       border-radius: 70%;
       padding: 30px 0px; }
 
+.tituloProductos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e7e7;
+  width: 100%;
+  height: 80px;
+  margin: 30px 0px; }
+
+.productos {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 5px;
+  width: 100%; }
+  .productos .productos__box {
+    width: 10rem;
+    text-align: center; }
+    .productos .productos__box .productos__box--img {
+      width: 100%; }
+    .productos .productos__box .productos__box--item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px; }
+    .productos .productos__box .productos__box--btn {
+      text-decoration: none;
+      background-color: #252020;
+      border-radius: 10px;
+      color: white;
+      padding: 8px;
+      transition: all .3s; }
+      .productos .productos__box .productos__box--btn:hover {
+        background-color: #c52e29;
+        transition: all .4s; }
+
 /*****************************MEDIA QUERYS***************************************/
 /*****************************MEDIA QUERYS***************************************/
 @media only screen and (max-width: 767px) {
@@ -458,7 +458,6 @@ h4 {
   .img-fluid {
     margin: 10px 0px; }
   .productos {
-    display: grid;
     grid-template-columns: 1fr 1fr; }
     .productos .productos__box {
       width: 13rem; }
