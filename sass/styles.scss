@@ -330,7 +330,12 @@ body{
   /**************************480px**********************/
 @media only screen and (max-width: 480px) {
   
-    
+  // Comun a todas los HTML
+
+  $anchoDivTitulo:175px; 
+  .fondoTituloHome,.fondoTituloVinos,.fondoTituloEspirituosas,.fondoTituloPromociones,.fondoTituloContacto  {
+    height: $anchoDivTitulo;
+  }
        
       .footer {
       

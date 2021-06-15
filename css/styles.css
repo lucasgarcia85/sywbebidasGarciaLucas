@@ -204,8 +204,7 @@
 
 .navbar-light .navbar-toggler {
   background-color: #e03333;
-  color: #e03333;
-  border-color: #98989a; }
+  color: #e03333; }
 
 .navbar-light .navbar-toggler:focus {
   box-shadow: none; }
@@ -238,6 +237,9 @@
     font-size: 1.2rem;
     justify-content: center;
     padding: 0px 6px; }
+
+.navbar-collapse {
+  flex-grow: 0; }
 
 /******* FIN ADAPTACION DEL NAVBAR DE BOOTSTRAP***********/
 #header__logo {
@@ -498,6 +500,8 @@ h4 {
 
 /**************************480px**********************/
 @media only screen and (max-width: 480px) {
+  .fondoTituloHome, .fondoTituloVinos, .fondoTituloEspirituosas, .fondoTituloPromociones, .fondoTituloContacto {
+    height: 175px; }
   .footer .footer__redes {
     font-size: 0.8rem; }
   .footer .footer__icontop .back_to_top {
