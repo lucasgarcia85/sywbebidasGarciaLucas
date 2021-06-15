@@ -75,7 +75,26 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+        .fondoTituloHome__div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(179, 11, 11, 0.5);
+        }
   }
+
+
+#HomeH1Anim{
+  animation: translateh1 1s linear .2s;
+}
+ @keyframes translateh1 {
+  0% {transform: translateX(100px);}
+  100% {transform: translateX(0px);}
+}
+
+
 .quienesSomos{
     margin: 50px 0px;
   }
@@ -213,17 +232,7 @@ body{
   /*****************************MEDIA QUERYS***************************************/
   
 @media only screen and (max-width: 767px) {
-      .activo{
-          text-decoration: underline;
-          color: white;
-         }
-      .header__barrasuperior{
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          justify-content:center;
-          align-items: center;
-          }
+      
      
         section article img{
                 width: 100%;
@@ -239,14 +248,7 @@ body{
               line-height: 30px;
               text-align: justify;}
          }
-         #header__logo{
-          display: none;
-         }   
-        #header__logonav{
-          width:6rem;
-          padding:2px;
-          display: flex;
-        } 
+           
         .carouselSize div img{
         height: 100%;
         width: 100%;
@@ -305,43 +307,31 @@ body{
         }
 /*****footer**********/
 
-    .footer {
-         .footer__icontop .back_to_top{
-                  animation: arrowup 2s linear 0s infinite; 
-                  transition: all .3s;
-                  color: $colorhover;
-                  font-size: 2.2rem;
-                        &:hover{
-                            animation:disabled
-                        }
-                        
-            }
-            .footer__redes{
-                    display: flex ;
-                    flex-flow: column wrap;
-                    height: 8rem;
-                    font-size:0.9rem;
-            }
+          .footer {
+                .footer__icontop .back_to_top{
+                        animation: arrowup 2s linear 0s infinite; 
+                        transition: all .3s;
+                        color: $colorhover;
+                        font-size: 2.2rem;
+                              &:hover{
+                                  animation:disabled
+                              }
+                              
+                  }
+                  .footer__redes{
+                          display: flex ;
+                          flex-flow: column wrap;
+                          height: 8rem;
+                          font-size:0.9rem;
+                  }
+          }
 }
  
   /**************************480px**********************/
 @media only screen and (max-width: 480px) {
   
-     .activo{
-          text-decoration: underline;
-          color: white;
-  
-      }
-  
-      .header__barrasuperior{
-          display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content:center;
-          align-items: center;
-          height: 50px;
-          }
-  
+    
+       
       .footer {
       
             .footer__redes{
@@ -353,28 +343,19 @@ body{
                 color: $colorhover;
                 }
         }
-    }             
+                 
   /****************INDEX*******************/
   
-      #header__logowebhome{
-      animation: translatelogoweb 1s linear .2s;
+      #HomeH1Anim{
+      animation: translateh1 1s linear .2s;
       }
-     @keyframes translatelogoweb {
+     @keyframes translateh1 {
       0% {transform: scale(1.0);}
       50% {transform: scale(1.2);}
       100% {transform: scale(1.0);}
       }
   
-      #header__logo{
-          display: none;
-      }    
-  
-      #header__logonav{
-          width:5rem;
-          padding:2px;
-          display: flex;
-      } 
-      .flex p{
+     .flex p{
       
           width: 100%;
           margin:0px;
@@ -418,8 +399,8 @@ body{
       .newsLetter{
           margin-bottom: 20px;
           margin-top: 10px;
-          div .forminputs{
-            width: 80%;}
+            div .forminputs{
+              width: 80%;}
         }
         
       /******* Fin pagina Contacto ****/
@@ -449,7 +430,7 @@ body{
                 width: 95%;
                 height: 250px;
               }
-          }
+         }
         .productos{
            display: grid;
            grid-template-columns: 1fr;

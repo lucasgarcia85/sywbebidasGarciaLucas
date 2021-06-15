@@ -5,11 +5,18 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 175px;
+  height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px; }
+  .fondoTituloContacto .fondoTituloContacto__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 11, 11, 0.5); }
 
 .contacto {
   display: flex;
@@ -42,11 +49,18 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 175px;
+  height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px; }
+  .fondoTituloEspirituosas .fondoTituloEspirituosas__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 11, 11, 0.5); }
 
 .gridEspirituosas__texto {
   display: grid;
@@ -67,11 +81,18 @@
   background-image: url(../img/promos/fondopromos2.jfif);
   background-size: cover;
   width: 100%;
-  height: 175px;
+  height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px; }
+  .fondoTituloPromociones .fondoTituloPromociones__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 11, 11, 0.5); }
 
 .promos {
   display: flex;
@@ -88,11 +109,18 @@
   background-image: url(../img/vinos/fondovino2.jpg);
   background-position: center;
   width: 100%;
-  height: 175px;
+  height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0px; }
+  .fondoTituloVinos .fondoTituloVinos__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 11, 11, 0.5); }
 
 .vinos .vinos__infoImagenes {
   display: grid;
@@ -168,41 +196,34 @@
     transform: translateY(5px); } }
 
 .header__barrasuperior {
-  background: #0a0a0a;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center; }
+  background: #0a0a0a; }
 
 /*******ADAPTACION DEL NAVBAR DE BOOTSTRAP***********/
-.header__navega {
-  background-color: #e7e7e7; }
-
-.container-fluid {
-  width: 70%; }
-
 .dropdown-item {
   text-align: center; }
 
 .navbar-light .navbar-toggler {
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: #e03333;
+  color: #e03333;
   border-color: #98989a; }
 
 .navbar-light .navbar-toggler:focus {
   box-shadow: none; }
 
 .navbar-light .navbar-nav .nav-link.active {
-  border-bottom: solid 2px;
-  color: black; }
+  color: #e03333; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: black; }
+  color: white;
+  background-image: linear-gradient(red, #c52e29);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #c52e29;
-  font-weight: bold; }
+  background-size: 100% 2px;
+  color: white; }
 
 .navbar-nav {
   display: flex;
@@ -215,26 +236,13 @@
     display: flex;
     width: 100%;
     font-size: 1.2rem;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0px 6px; }
 
 /******* FIN ADAPTACION DEL NAVBAR DE BOOTSTRAP***********/
 #header__logo {
   width: 8rem;
   padding: 10px; }
-
-#header__logonav {
-  width: 3rem;
-  padding: 1px;
-  display: none; }
-
-#header__logowebhome {
-  animation: translatelogoweb 1s linear .2s; }
-
-@keyframes translatelogoweb {
-  0% {
-    transform: translateX(100px); }
-  100% {
-    transform: translateX(0px); } }
 
 /* inicio clases generales */
 * {
@@ -297,11 +305,27 @@ h4 {
   background-image: url(../img/home/fondohome.jpg);
   background-position: center;
   width: 100%;
-  height: 175px;
+  height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px; }
+  .fondoTituloHome .fondoTituloHome__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 11, 11, 0.5); }
+
+#HomeH1Anim {
+  animation: translateh1 1s linear .2s; }
+
+@keyframes translateh1 {
+  0% {
+    transform: translateX(100px); }
+  100% {
+    transform: translateX(0px); } }
 
 .quienesSomos {
   margin: 50px 0px; }
@@ -414,15 +438,6 @@ h4 {
 /*****************************MEDIA QUERYS***************************************/
 /*****************************MEDIA QUERYS***************************************/
 @media only screen and (max-width: 767px) {
-  .activo {
-    text-decoration: underline;
-    color: white; }
-  .header__barrasuperior {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; }
   section article img {
     width: 100%; }
   section iframe {
@@ -434,12 +449,6 @@ h4 {
       margin: 0px;
       line-height: 30px;
       text-align: justify; }
-  #header__logo {
-    display: none; }
-  #header__logonav {
-    width: 6rem;
-    padding: 2px;
-    display: flex; }
   .carouselSize div img {
     height: 100%;
     width: 100%; }
@@ -485,43 +494,25 @@ h4 {
     display: flex;
     flex-flow: column wrap;
     height: 8rem;
-    font-size: 0.9rem; }
-  /**************************480px**********************/ }
+    font-size: 0.9rem; } }
 
-@media only screen and (max-width: 767px) and (max-width: 480px) {
-  .activo {
-    text-decoration: underline;
-    color: white; }
-  .header__barrasuperior {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 50px; }
+/**************************480px**********************/
+@media only screen and (max-width: 480px) {
   .footer .footer__redes {
     font-size: 0.8rem; }
   .footer .footer__icontop .back_to_top {
     font-size: 2rem;
-    color: #c52e29; } }
-
-@media only screen and (max-width: 767px) {
+    color: #c52e29; }
   /****************INDEX*******************/
-  #header__logowebhome {
-    animation: translatelogoweb 1s linear .2s; }
-  @keyframes translatelogoweb {
+  #HomeH1Anim {
+    animation: translateh1 1s linear .2s; }
+  @keyframes translateh1 {
     0% {
       transform: scale(1); }
     50% {
       transform: scale(1.2); }
     100% {
       transform: scale(1); } }
-  #header__logo {
-    display: none; }
-  #header__logonav {
-    width: 5rem;
-    padding: 2px;
-    display: flex; }
   .flex p {
     width: 100%;
     margin: 0px;
