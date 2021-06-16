@@ -4,17 +4,22 @@
 }
  /*******ADAPTACION DEL NAVBAR DE BOOTSTRAP***********/
  
- .dropdown-item {
+.dropdown-item {
     text-align: center;
  }
 .navbar-light {
 
+    .navbar-toggler-icon {
+        background-image:url(../img/hamburg2.png);
+        width: 2.5em;
+        height: 2.5em;
+    }
+
     .navbar-toggler {
-    background-color: $colornavegadoritems;
-    color: $colornavegadoritems;
+        color: $colornavegadoritems;
     }
     .navbar-toggler:focus{
-            box-shadow:none;
+        box-shadow:none;
         }
     .navbar-nav{
         .nav-link.active {
@@ -62,10 +67,3 @@
     padding: 10px;
 }
 
-
-
-
-
-
- 
- 

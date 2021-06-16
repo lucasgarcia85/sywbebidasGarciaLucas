@@ -336,18 +336,22 @@ body{
   .fondoTituloHome,.fondoTituloVinos,.fondoTituloEspirituosas,.fondoTituloPromociones,.fondoTituloContacto  {
     height: $anchoDivTitulo;
   }
+
+  h1 {
+    font-size: 2.2rem;
+  }
        
-      .footer {
-      
-            .footer__redes{
-            font-size:0.8rem;
-           
-            }
-            .footer__icontop .back_to_top{
-                font-size: 2rem;
-                color: $colorhover;
-                }
+  .footer {
+  
+        .footer__redes{
+        font-size:0.8rem;
+        
         }
+        .footer__icontop .back_to_top{
+            font-size: 2rem;
+            color: $colorhover;
+            }
+    }
                  
   /****************INDEX*******************/
   

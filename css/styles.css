@@ -202,8 +202,12 @@
 .dropdown-item {
   text-align: center; }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../img/hamburg2.png);
+  width: 2.5em;
+  height: 2.5em; }
+
 .navbar-light .navbar-toggler {
-  background-color: #e03333;
   color: #e03333; }
 
 .navbar-light .navbar-toggler:focus {
@@ -502,6 +506,8 @@ h4 {
 @media only screen and (max-width: 480px) {
   .fondoTituloHome, .fondoTituloVinos, .fondoTituloEspirituosas, .fondoTituloPromociones, .fondoTituloContacto {
     height: 175px; }
+  h1 {
+    font-size: 2.2rem; }
   .footer .footer__redes {
     font-size: 0.8rem; }
   .footer .footer__icontop .back_to_top {
