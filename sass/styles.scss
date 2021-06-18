@@ -54,15 +54,7 @@ body{
       margin-top: 25px;
       margin-bottom:25px;
   }
-   h3{
-      margin-top: 15px;
-      margin-bottom: 15px;
-  }
-  h4{
-      margin-top: 10px;
-      margin-bottom: 10px;
-   }
-    
+      
   /* fin clases generales */
   
   /************** INDEX *********************/
@@ -154,7 +146,31 @@ body{
             justify-items: center;
           }
 }
- 
+
+.accordion-item {
+  background-color: #fff;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color:rgba(179, 11, 11, 0.5);
+}
+
+.accordion-button:focus {
+  border-color: #05070a;
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-body {
+    ul{
+      padding-top: 0.5rem;
+    }
+    p{
+    text-align: justify;
+    }
+}
+
 .tarjetas{
     width: 35%;
     min-width: 300px;
@@ -289,22 +305,23 @@ body{
 
 /**************PAGINA CONTACTO ************/
   
-        .contacto__form{
-          margin-right: 15px;
-          margin-bottom: 25px;
-        }
-      
-        .contacto__maps{
-          margin-left: 15px;
-          margin-bottom: 25px;
-        }
-  
-        .newsLetter{
-          margin-bottom: 20px;
-          margin-top: 10px;
-           div .forminputs{
-            width: 70%; }
-        }
+.contacto {
+     .contacto__form{
+            margin-right: 0px;
+            margin-bottom: 25px;
+             }
+      .contacto__maps{
+           margin-left: 0px;
+           margin-bottom: 25px;
+            } 
+}
+.newsLetter{
+    margin-bottom: 20px;
+    margin-top: 10px;
+      div .forminputs{
+      width: 70%;
+      }
+}
 /*****footer**********/
 
           .footer {
@@ -395,16 +412,7 @@ body{
 
       /*********** pagina Contacto**************/
   
-      .contacto__form{
-          margin-right: 15px;
-          margin-bottom: 25px;
-      }
-      
-      .contacto__maps{
-          margin-left: 15px;
-          margin-bottom: 25px;
-      }
-  
+        
       .newsLetter{
           margin-bottom: 20px;
           margin-top: 10px;
