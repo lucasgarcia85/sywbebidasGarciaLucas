@@ -114,67 +114,23 @@ body{
     height: 90%;
     width: 90%;
    }
-.flex {
+
+.flexTarjetas{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
     margin:40px 0px;
-    p{
-        width: 40%;
-        margin: 30px;
-        line-height: 30px;
-        text-align: justify;
-    }
 }
+
 #iframeindex{
     width: 40%;
     height: 300px;
 }
-.recetas{
-    background-color: $colornavegador;
-    padding: 30px;
-        div details{
-            margin: 5px 0px;
-         }
-        h2{
-          text-align: center;
-        }
-        .recetas__grid{
-            display:grid;
-            gap: 25px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            justify-items: center;
-          }
-}
-
-.accordion-item {
-  background-color: #fff;
-  border: none;
-}
-
-.accordion-button:not(.collapsed) {
-  color: #ffffff;
-  background-color:rgba(179, 11, 11, 0.5);
-}
-
-.accordion-button:focus {
-  border-color: #05070a;
-  outline: 0;
-  box-shadow: none;
-}
-.accordion-body {
-    ul{
-      padding-top: 0.5rem;
-    }
-    p{
-    text-align: justify;
-    }
-}
 
 .tarjetas{
-    width: 35%;
+    width: 40%;
     min-width: 300px;
-    margin: 20px 0px;
+    margin: 20px 10px;
 }
 .envios{
   background-color:$colornavegador;
@@ -256,15 +212,7 @@ body{
         section iframe{
                 width: 100%;
         }
-        .flex{
-          justify-content: center;
-            p{
-              width: 100%;
-              margin: 0px;
-              line-height: 30px;
-              text-align: justify;}
-         }
-           
+                        
         .carouselSize div img{
         height: 100%;
         width: 100%;
@@ -275,11 +223,7 @@ body{
         height: 300px;
         
         }
-      .recetas .recetas__grid {
-            grid-template-columns: 1fr;
-            justify-items: start;
-        }
-  
+        
 /***********pagina Espirituosas***********/
         .gridEspirituosas__texto{
           grid-template-columns: 1fr;
@@ -288,7 +232,19 @@ body{
         .gridEspirituosas__images{
           grid-template-columns: 1fr 1fr;
         }
+        .flex{
+          justify-content: center;
+            p{
+              width: 100%;
+              margin: 0px;
+              line-height: 30px;
+              text-align: justify;}
+         }
   
+        //  .recetas .recetas__grid {
+        //   grid-template-columns: 1fr;
+        //   justify-items: start;
+        // }
 /********************* VINOS **************/
         
         .img-fluid{
@@ -372,6 +328,14 @@ body{
                  
   /****************INDEX*******************/
   
+  /******Menu Hamburguesa mas pequeño******/
+  
+  .navbar-light .navbar-toggler-icon {
+   width: 2em;
+  }
+
+  /******Menu Hamburguesa mas pequeño******/
+
       #HomeH1Anim{
       animation: translateh1 1s linear .2s;
       }
@@ -381,13 +345,6 @@ body{
       100% {transform: scale(1.0);}
       }
   
-     .flex p{
-      
-          width: 100%;
-          margin:0px;
-          line-height: 30px;
-          text-align: justify;
-        }
       section article img{
               width: 100%;
       }
@@ -397,7 +354,7 @@ body{
 
       .tarjetas{
         width: 90%;
-        min-width: 300px;
+        min-width: 0;
         margin: 20px 0px;
     }
 
@@ -429,6 +386,13 @@ body{
   
       .gridEspirituosas__images{
           grid-template-columns: 1fr;
+        }
+      .flex p{
+      
+          width: 100%;
+          margin:0px;
+          line-height: 30px;
+          text-align: justify;
         }
 
         /**************pagina vinos***************/

@@ -33,3 +33,60 @@
             margin-top:  5px;
         }
 }
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+  }
+  .accordion-button {
+    background-color: transparent;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: black;
+    background-color:transparent;
+  }
+  
+  .accordion-button:focus {
+    border-color: #05070a;
+    outline: 0;
+    box-shadow: none;
+  }
+  .accordion-body {
+      ul{
+        padding-top: 0.5rem;
+      }
+      p{
+      text-align: justify;
+      }
+  }
+
+  .flex {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin:40px 0px;
+    p{
+        width: 40%;
+        margin: 30px;
+        line-height: 30px;
+        text-align: justify;
+    }
+}
+
+.recetas{
+    background-color: $colornavegador;
+    padding: 30px;
+        div details{
+            margin: 5px 0px;
+         }
+        h2{
+          text-align: center;
+        }
+        // .recetas__grid{
+        //     display:grid;
+        //     gap: 25px;
+        //     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        //     justify-items: center;
+        //   }
+}
