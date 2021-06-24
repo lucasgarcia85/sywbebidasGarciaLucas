@@ -179,6 +179,11 @@ body{
   .productos__box{
       width: 10rem;
       text-align: center;
+      &:hover{
+          box-shadow: rgb(0, 0, 0 / 25%) 0px 3px 10px;
+          border-radius: 1rem;
+          overflow: hidden;
+        }
       
       .productos__box--img{
           width: 100%;

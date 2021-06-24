@@ -444,6 +444,10 @@ h2 {
   .productos .productos__box {
     width: 10rem;
     text-align: center; }
+    .productos .productos__box:hover {
+      box-shadow: black 0px 3px 10px;
+      border-radius: 1rem;
+      overflow: hidden; }
     .productos .productos__box .productos__box--img {
       width: 100%; }
     .productos .productos__box .productos__box--item {
