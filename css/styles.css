@@ -28,7 +28,7 @@
     margin-right: 20px;
     margin-bottom: 20px; }
     .contacto .contacto__form .forminputs {
-      width: 70%;
+      width: 90%;
       margin-top: .5rem;
       border-radius: 5px; }
   .contacto .contacto__maps {
@@ -101,14 +101,14 @@
 .accordion-body p {
   text-align: justify; }
 
-.flex {
+.recetasVideo {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 40px 0px; }
-  .flex p {
+  .recetasVideo p {
     width: 40%;
-    margin: 30px;
+    margin: 0px 15px 15px 15px;
     line-height: 30px;
     text-align: justify; }
 
@@ -402,7 +402,6 @@ h2 {
   height: 300px; }
 
 .tarjetas {
-  width: 40%;
   min-width: 300px;
   margin: 20px 10px; }
 
@@ -476,11 +475,10 @@ h2 {
     grid-template-columns: 1fr; }
   .gridEspirituosas__images {
     grid-template-columns: 1fr 1fr; }
-  .flex {
+  .recetasVideo {
     justify-content: center; }
-    .flex p {
+    .recetasVideo p {
       width: 100%;
-      margin: 0px;
       line-height: 30px;
       text-align: justify; }
   /********************* VINOS **************/
@@ -524,6 +522,8 @@ h2 {
     font-size: 2.2rem; }
   .footer .footer__redes {
     font-size: 0.8rem; }
+    .footer .footer__redes div p {
+      margin-left: 8px; }
   .footer .footer__icontop .back_to_top {
     font-size: 2rem;
     color: #c52e29; }
@@ -567,9 +567,7 @@ h2 {
     grid-template-columns: 1fr; }
   .gridEspirituosas__images {
     grid-template-columns: 1fr; }
-  .flex p {
-    width: 100%;
-    margin: 0px;
+  .recetasVideo p {
     line-height: 30px;
     text-align: justify; }
   /**************pagina vinos***************/

@@ -61,14 +61,14 @@
       }
   }
 
-  .flex {
+  .recetasVideo {
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
     margin:40px 0px;
     p{
         width: 40%;
-        margin: 30px;
+        margin: 0px 15px 15px 15px;
         line-height: 30px;
         text-align: justify;
     }
@@ -83,10 +83,4 @@
         h2{
           text-align: center;
         }
-        // .recetas__grid{
-        //     display:grid;
-        //     gap: 25px;
-        //     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        //     justify-items: center;
-        //   }
 }

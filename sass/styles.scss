@@ -128,7 +128,6 @@ body{
 }
 
 .tarjetas{
-    width: 40%;
     min-width: 300px;
     margin: 20px 10px;
 }
@@ -232,19 +231,14 @@ body{
         .gridEspirituosas__images{
           grid-template-columns: 1fr 1fr;
         }
-        .flex{
+        .recetasVideo{
           justify-content: center;
             p{
               width: 100%;
-              margin: 0px;
               line-height: 30px;
               text-align: justify;}
          }
   
-        //  .recetas .recetas__grid {
-        //   grid-template-columns: 1fr;
-        //   justify-items: start;
-        // }
 /********************* VINOS **************/
         
         .img-fluid{
@@ -318,6 +312,9 @@ body{
   
         .footer__redes{
         font-size:0.8rem;
+          div p {
+            margin-left:8px;
+          }
         
         }
         .footer__icontop .back_to_top{
@@ -387,10 +384,7 @@ body{
       .gridEspirituosas__images{
           grid-template-columns: 1fr;
         }
-      .flex p{
-      
-          width: 100%;
-          margin:0px;
+      .recetasVideo p{
           line-height: 30px;
           text-align: justify;
         }
