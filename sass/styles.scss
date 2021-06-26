@@ -115,11 +115,23 @@ body{
     width: 90%;
    }
 
-.flexTarjetas{
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin:40px 0px;
+
+.mediosContenedor{
+    display: flex;
+    justify-content: center;
+          .mediosContenedor__flexTarjetas{
+          width: 90%;
+          display:flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          align-items: center;
+          margin:40px 0px;
+              .mediosContenedor__flexTarjetas--tarjetas{
+                width: 45%;
+                min-width: 300px;
+                margin: 20px 10px;
+            }
+      }
 }
 
 #iframeindex{
@@ -127,10 +139,6 @@ body{
     height: 300px;
 }
 
-.tarjetas{
-    min-width: 300px;
-    margin: 20px 10px;
-}
 .envios{
     background-color:$colornavegador;
       .envios__titulo{
@@ -361,11 +369,16 @@ body{
               width: 100%;
       }
 
-      .tarjetas{
-        width: 90%;
-        min-width: 0;
-        margin: 20px 0px;
-    }
+     .mediosContenedor{
+          .mediosContenedor__flexTarjetas{
+            margin-top: 0px;
+                .mediosContenedor__flexTarjetas--tarjetas{
+                  width: 90%;
+                  margin: 20px 0px;
+                }
+           }
+     } 
+    
 
       /*********** pagina Contacto**************/
       .newsLetter{
