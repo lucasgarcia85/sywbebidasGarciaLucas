@@ -480,6 +480,22 @@ h2 {
           background-color: #c52e29;
           transition: all .4s; }
 
+.selector {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 8px 0px; }
+  .selector .selector__paginas {
+    list-style: none;
+    display: flex; }
+    .selector .selector__paginas .selector__paginas--actual {
+      color: #e03333; }
+    .selector .selector__paginas li {
+      margin-right: 5px; }
+      .selector .selector__paginas li a {
+        text-decoration: none;
+        color: black; }
+
 /*****************************MEDIA QUERYS***************************************/
 /*****************************MEDIA QUERYS***************************************/
 @media only screen and (max-width: 767px) {

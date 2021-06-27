@@ -229,6 +229,31 @@ body{
 
   }
 }
+
+.selector {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 8px 0px;
+    .selector__paginas{
+      list-style: none;
+      display: flex;
+
+        .selector__paginas--actual{
+          color:$colornavegadoritems
+        }
+
+        li{
+          margin-right: 5px;
+            a{
+              text-decoration: none;
+              color: black;
+            }
+        }
+    }
+}
+
+
 // compartido vinos con espirituosas
 
   /*****************************MEDIA QUERYS***************************************/
