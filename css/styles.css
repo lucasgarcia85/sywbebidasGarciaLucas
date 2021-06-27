@@ -447,7 +447,7 @@ h2 {
   padding: 5px;
   width: 100%; }
   .productos .productos__box {
-    width: 10rem;
+    width: 13rem;
     text-align: center; }
     .productos .productos__box:hover {
       box-shadow: black 0px 3px 10px;
@@ -459,17 +459,26 @@ h2 {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 10px; }
-    .productos .productos__box .productos__box--btn {
-      text-decoration: none;
-      background-color: #252020;
-      border-radius: 10px;
-      color: white;
-      padding: 8px;
-      transition: all .3s; }
-      .productos .productos__box .productos__box--btn:hover {
-        background-color: #c52e29;
-        transition: all .4s; }
+      padding: 10px;
+      height: 6rem; }
+    .productos .productos__box .productos__box--comprar {
+      display: flex;
+      flex-flow: column nowrap;
+      align-content: center;
+      align-items: center;
+      justify-content: flex-end;
+      height: 4rem;
+      margin-bottom: 1rem; }
+      .productos .productos__box .productos__box--comprar .productos__box--btn {
+        text-decoration: none;
+        background-color: #252020;
+        border-radius: 10px;
+        color: white;
+        padding: 8px;
+        transition: all .3s; }
+        .productos .productos__box .productos__box--comprar .productos__box--btn:hover {
+          background-color: #c52e29;
+          transition: all .4s; }
 
 /*****************************MEDIA QUERYS***************************************/
 /*****************************MEDIA QUERYS***************************************/
