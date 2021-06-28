@@ -36,7 +36,6 @@ body{
       font-style: oblique;
       text-transform: uppercase;
     }
-  
   .textoDerecha{
       text-align: right;
   }
@@ -54,15 +53,6 @@ body{
       margin-top: 25px;
       margin-bottom:25px;
   }
-   h3{
-      margin-top: 15px;
-      margin-bottom: 15px;
-  }
-  h4{
-      margin-top: 10px;
-      margin-bottom: 10px;
-   }
-    
   /* fin clases generales */
   
   /************** INDEX *********************/
@@ -75,7 +65,22 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+        .fondoTituloHome__div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(179, 11, 11, 0.5);
+        }
   }
+#HomeH1Anim{
+  animation: translateh1 1s linear .2s;
+}
+ @keyframes translateh1 {
+  0% {transform: translateX(100px);}
+  100% {transform: translateX(0px);}
+}
 .quienesSomos{
     margin: 50px 0px;
   }
@@ -98,67 +103,55 @@ body{
             color:$colorhover ;
         }  
 }
-
 .carouselSize div img{
     height: 90%;
     width: 90%;
    }
-.flex {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin:40px 0px;
-    p{
-        width: 40%;
-        margin: 30px;
-        line-height: 30px;
-        text-align: justify;
-    }
+.mediosContenedor{
+    display: flex;
+    justify-content: center;
+          .mediosContenedor__flexTarjetas{
+          width: 90%;
+          display:flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          align-items: center;
+          margin:40px 0px;
+              .mediosContenedor__flexTarjetas--tarjetas{
+                width: 45%;
+                min-width: 300px;
+                margin: 20px 10px;
+            }
+      }
 }
 #iframeindex{
     width: 40%;
     height: 300px;
 }
-.recetas{
-    background-color: $colornavegador;
-    padding: 30px;
-        div details{
-            margin: 5px 0px;
-         }
-        h2{
-          text-align: center;
-        }
-        .recetas__grid{
-            display:grid;
-            gap: 25px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            justify-items: center;
-          }
-}
- 
-.tarjetas{
-    width: 35%;
-    min-width: 300px;
-    margin: 20px 0px;
-}
 .envios{
-  background-color:$colornavegador;
-    .envios__titulo{
-      text-align: center;
-      padding-top: 20px;
-    }
-    .envios__imag{
-      display: flex;
-      justify-content: space-evenly;
-      flex-flow: row nowrap;
-          img{
-            width: 26%;
-            border-radius: 70%;
-            padding: 30px 0px;
-          }
-    }
-  }
-
+    background-color:$colornavegador;
+      .envios__titulo{
+        text-align: center;
+        padding-top: 20px;
+      }
+      .envios__imag{
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row nowrap;
+            .envios__imag--div {
+                border-radius: 1rem;
+                overflow: hidden;
+                box-shadow: rgb(0, 0, 0 / 35%) 0px 5px 15px;
+                width: 30%;
+                margin-bottom: 25px;
+              
+                  img{
+                      width: 100%;
+                      height: 100%;
+                    }
+              }
+      }
+}
  // compartido vinos y espirituosas//
  .tituloProductos{
   display: flex;
@@ -169,7 +162,6 @@ body{
   height: 80px;
   margin:30px 0px;
 }
-
  .productos{
   display: grid;
   justify-items: center;
@@ -178,11 +170,14 @@ body{
   gap: 20px;
   padding: 5px;
   width: 100%;
- 
-  .productos__box{
-      width: 10rem;
+ .productos__box{
+      width: 13rem;
       text-align: center;
-      
+      &:hover{
+          box-shadow: rgb(0, 0, 0 / 25%) 0px 3px 10px;
+          border-radius: 1rem;
+          overflow: hidden;
+        }
       .productos__box--img{
           width: 100%;
       }
@@ -191,88 +186,92 @@ body{
           flex-direction: column;
           align-items: center;
           padding: 10px;
+          height: 6rem;
           }
-      .productos__box--btn{
-          text-decoration: none;
-          background-color:rgb(37, 32, 32) ;
-          border-radius: 10px;
-          color:white;
-          padding: 8px;
-          transition: all .3s;
-              &:hover{
-                  background-color: $colorhover;
-                  transition: all .4s;
-              }
-      }
+      .productos__box--comprar {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-end;
+        height: 4rem;
+        margin-bottom: 1rem;
+            .productos__box--btn{
+                text-decoration: none;
+                background-color:rgb(37, 32, 32) ;
+                border-radius: 10px;
+                color:white;
+                padding: 8px;
+                transition: all .3s;
+                    &:hover{
+                        background-color: $colorhover;
+                        transition: all .4s;
+                    }
+            }
+       }
 
   }
 }
-// compartido vinos con espirituosas
+.selector {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 8px 0px;
+    .selector__paginas{
+      list-style: none;
+      display: flex;
+        .selector__paginas--actual{
+          color:$colornavegadoritems
+        }
+        li{
+          margin-right: 5px;
+            a{
+              text-decoration: none;
+              color: black;
+            }
+        }
+    }
+}
+
+// Fin compartido vinos con espirituosas
 
   /*****************************MEDIA QUERYS***************************************/
   /*****************************MEDIA QUERYS***************************************/
+   /*****************************MEDIA QUERYS***************************************/
   
 @media only screen and (max-width: 767px) {
-      .activo{
-          text-decoration: underline;
-          color: white;
-         }
-      .header__barrasuperior{
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          justify-content:center;
-          align-items: center;
-          }
-     
+      
         section article img{
                 width: 100%;
         }
         section iframe{
                 width: 100%;
         }
-        .flex{
-          justify-content: center;
-            p{
-              width: 100%;
-              margin: 0px;
-              line-height: 30px;
-              text-align: justify;}
-         }
-         #header__logo{
-          display: none;
-         }   
-        #header__logonav{
-          width:6rem;
-          padding:2px;
-          display: flex;
-        } 
         .carouselSize div img{
         height: 100%;
         width: 100%;
         }
-         
         #iframeindex{
         width: 100%;
         height: 300px;
+        }
         
-        }
-      .recetas .recetas__grid {
-            grid-template-columns: 1fr;
-            justify-items: start;
-        }
-  
 /***********pagina Espirituosas***********/
         .gridEspirituosas__texto{
           grid-template-columns: 1fr;
         }
-  
         .gridEspirituosas__images{
           grid-template-columns: 1fr 1fr;
         }
+        .recetasVideo{
+          justify-content: center;
+            p{
+              width: 100%;
+              line-height: 30px;
+              text-align: justify;}
+         }
   
 /********************* VINOS **************/
-        
         .img-fluid{
           margin: 10px 0px;
           }
@@ -281,106 +280,90 @@ body{
             .productos__box{
               width: 13rem;
             }                  
-           
-          }
+        }
         
 
 /**************PAGINA CONTACTO ************/
   
-        .contacto__form{
-          margin-right: 15px;
-          margin-bottom: 25px;
-        }
-      
-        .contacto__maps{
-          margin-left: 15px;
-          margin-bottom: 25px;
-        }
-  
-        .newsLetter{
-          margin-bottom: 20px;
-          margin-top: 10px;
-           div .forminputs{
-            width: 70%; }
-        }
-/*****footer**********/
-
-    .footer {
-         .footer__icontop .back_to_top{
-                  animation: arrowup 2s linear 0s infinite; 
-                  transition: all .3s;
-                  color: $colorhover;
-                  font-size: 2.2rem;
-                        &:hover{
-                            animation:disabled
-                        }
-                        
-            }
-            .footer__redes{
-                    display: flex ;
-                    flex-flow: column wrap;
-                    height: 8rem;
-                    font-size:0.9rem;
-            }
+.contacto {
+     .contacto__form{
+            margin-right: 0px;
+            margin-bottom: 25px;
+             }
+      .contacto__maps{
+           margin-left: 0px;
+           margin-bottom: 25px;
+            } 
 }
- 
-  /**************************480px**********************/
+.newsLetter{
+    margin-bottom: 20px;
+    margin-top: 10px;
+      div .forminputs{
+      width: 70%;
+      }
+}
+/*****footer**********/
+          .footer {
+                .footer__icontop .back_to_top{
+                        animation: arrowup 2s linear 0s infinite; 
+                        transition: all .3s;
+                        color: $colorhover;
+                        font-size: 2.2rem;
+                              &:hover{
+                                  animation:disabled
+                              }
+                              
+                  }
+                  .footer__redes{
+                          display: flex ;
+                          flex-flow: column wrap;
+                          height: 8rem;
+                          font-size:0.9rem;
+                  }
+          }
+}
+   /**************************480px**********************/
 @media only screen and (max-width: 480px) {
   
-     .activo{
-          text-decoration: underline;
-          color: white;
+  // Comun a todas los HTML
+
+  $anchoDivTitulo:175px; 
+  .fondoTituloHome,.fondoTituloVinos,.fondoTituloEspirituosas,.fondoTituloPromociones,.fondoTituloContacto  {
+    height: $anchoDivTitulo;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .footer {
   
-      }
-  
-      .header__barrasuperior{
-          display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content:center;
-          align-items: center;
-          height: 50px;
+        .footer__redes{
+        font-size:0.8rem;
+          div p {
+            margin-left:8px;
           }
-  
-      .footer {
-      
-            .footer__redes{
-            font-size:0.8rem;
-           
-            }
-            .footer__icontop .back_to_top{
-                font-size: 2rem;
-                color: $colorhover;
-                }
+        
         }
-    }             
+        .footer__icontop .back_to_top{
+            font-size: 2rem;
+            color: $colorhover;
+            }
+    }
   /****************INDEX*******************/
   
-      #header__logowebhome{
-      animation: translatelogoweb 1s linear .2s;
+  /******Menu Hamburguesa mas pequeño******/
+  
+  .navbar-light .navbar-toggler-icon {
+   width: 2em;
+  }
+  /******Menu Hamburguesa mas pequeño******/
+      #HomeH1Anim{
+      animation: translateh1 1s linear .2s;
       }
-     @keyframes translatelogoweb {
+     @keyframes translateh1 {
       0% {transform: scale(1.0);}
       50% {transform: scale(1.2);}
       100% {transform: scale(1.0);}
       }
-  
-      #header__logo{
-          display: none;
-      }    
-  
-      #header__logonav{
-          width:5rem;
-          padding:2px;
-          display: flex;
-      } 
-      .flex p{
-      
-          width: 100%;
-          margin:0px;
-          line-height: 30px;
-          text-align: justify;
-        }
       section article img{
               width: 100%;
       }
@@ -388,38 +371,21 @@ body{
               width: 100%;
       }
 
-      .tarjetas{
-        width: 90%;
-        min-width: 300px;
-        margin: 20px 0px;
-    }
-
-      .envios .envios__imag{
-        display: flex;
-        justify-content: space-evenly;
-        flex-flow: row nowrap;
-            img{
-              width: 32%;
-            }
-      }
-
+     .mediosContenedor{
+          .mediosContenedor__flexTarjetas{
+            margin-top: 0px;
+                .mediosContenedor__flexTarjetas--tarjetas{
+                  width: 90%;
+                  margin: 20px 0px;
+                }
+           }
+     } 
       /*********** pagina Contacto**************/
-  
-      .contacto__form{
-          margin-right: 15px;
-          margin-bottom: 25px;
-      }
-      
-      .contacto__maps{
-          margin-left: 15px;
-          margin-bottom: 25px;
-      }
-  
       .newsLetter{
           margin-bottom: 20px;
           margin-top: 10px;
-          div .forminputs{
-            width: 80%;}
+            div .forminputs{
+              width: 80%;}
         }
         
       /******* Fin pagina Contacto ****/
@@ -428,11 +394,13 @@ body{
       .gridEspirituosas__texto{
           grid-template-columns: 1fr;
         }
-  
       .gridEspirituosas__images{
           grid-template-columns: 1fr;
         }
-
+      .recetasVideo p{
+          line-height: 30px;
+          text-align: justify;
+        }
         /**************pagina vinos***************/
         .vinos .vinos__infoImagenes{
           display: grid;
@@ -440,16 +408,14 @@ body{
           grid-gap: 20px;
           align-content: center;
           height: auto;
-
               img{
                 width: 95%;
-                height: 95%;
                 }
               iframe{
                 width: 95%;
                 height: 250px;
               }
-          }
+         }
         .productos{
            display: grid;
            grid-template-columns: 1fr;

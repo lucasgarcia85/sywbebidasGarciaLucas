@@ -16,39 +16,31 @@
 <body>
     <header id="header">
         <div class="header__barrasuperior">
-            <div>
-                <img src="img/home/logowh.png" alt="Logo S&W Bebidas" title="S&W Bebidas" id="header__logo">
-            </div> 
-            <div>
-                <img src="img/home/sywbebidaslogo.png" alt="foto direccion web" title="Syw-bebidas.com.ar" id="header__logoweb"> 
-            </div>
-        </div>
-        <div class="header__navega">
             <nav class="navbar navbar-expand-lg navbar-light bg-xxxx">
-                <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="img/home/logobk.png" alt="Logo S&W Bebidas" title="S&W Bebidas" id="header__logonav"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="img/home/logowh.png" alt="Logo S&W Bebidas" title="S&W Bebidas" id="header__logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="vinos.html">Vinos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="espirituosas.html">Espirituosas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="promociones.html">Promociones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                     </ul>
-                </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="vinos.html">Vinos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="espirituosas.html">Espirituosas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="promociones.html">Promociones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -56,10 +48,13 @@
     <!-- comienza main y contenido de pagina    -->    
     <main>
         <div class="fondoTituloVinos">
-            <h1 class="center"> Vinos </h1>
-    <!-- primera seccion -->
+            <div class="fondoTituloVinos__div">
+                <div>
+                    <h1 class="center"> Vinos </h1>
+                </div>
+            </div>
         </div>
-         <div class="contenedor"> 
+        <div class="contenedor"> 
             <section class="vinos">
                 <article class="vinos__definicion">
                     <h2>DEFINICION</h2>
@@ -78,86 +73,117 @@
                     <iframe  src="https://www.youtube.com/embed/_53WVisUErQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </article>
             </section> 
-            <div class="tituloProductos">
-                <h2 class="">Vinos Seleccionados</h2>
-            </div>
+        </div>
+        <div class="tituloProductos">
+            <h2 class="">Vinos Seleccionados</h2>
+        </div>
+        <div class="contenedor">
             <section class="productos">
                 <div class="productos__box">
-                    <img class="productos__box--img"  src="img/vinos/benjaminnietosenetiner.jpg" alt="...">
+                    <img class="productos__box--img"  src="img/vinos/benjaminnietosenetiner.jpg" alt="Vino Benjamin Senetiner">
                     <div class="productos__box--item">
                       <h3>Nieto Senetiner</h3>
                       <p>$1500</p>
-                      <a href="#" class="productos__box--btn">Comprar</a>
+                    </div>
+                    <div class="productos__box--comprar">
+                        <a href="#" class="productos__box--btn">Comprar</a>
                     </div>
                 </div>
                 <div class="productos__box">
-                    <img class="productos__box--img"  src="img/vinos/amalayadulce.jpg" alt="...">
+                    <img class="productos__box--img"  src="img/vinos/amalayadulce.jpg" alt="Vino amalaya Dulce">
                     <div class="productos__box--item">
                       <h3>Amalaya Dulce</h3>
                       <p>$1700</p>
-                      <a href="#" class="productos__box--btn">Comprar</a>
+                    </div>
+                    <div class="productos__box--comprar">
+                        <a href="#" class="productos__box--btn">Comprar</a>
                     </div>
                 </div>
                 <div class="productos__box">
-                    <img class="productos__box--img"  src="img/vinos/alamoschardonnay.jpg" alt="...">
+                    <img class="productos__box--img"  src="img/vinos/alamoschardonnay.jpg" alt="Vino Alamos ">
                     <div class="productos__box--item">
                       <h3>Alamos Chardonnay</h3>
                       <p>$1100</p>
-                      <a href="#" class="productos__box--btn">Comprar</a>
+                    </div>
+                    <div class="productos__box--comprar">
+                        <a href="#" class="productos__box--btn">Comprar</a>
                     </div>
                 </div>
                 <div class="productos__box">
-                    <img class="productos__box--img"  src="img/vinos/casabohergran Chardonnay.jpg" alt="...">
+                    <img class="productos__box--img"  src="img/vinos/casabohergran Chardonnay.jpg" alt="Vino casa bohergran">
                     <div class="productos__box--item">
                       <h3>Bohergran Chardonnay</h3>
                       <p>$1950</p>
-                      <a href="#" class="productos__box--btn">Comprar</a>
+                    </div>
+                    <div class="productos__box--comprar">
+                        <a href="#" class="productos__box--btn">Comprar</a>
                     </div>
                 </div>
                 <div class="productos__box">
-                    <img class="productos__box--img"  src="img/vinos/dvcatenachardonnay.jpg" alt="...">
+                    <img class="productos__box--img"  src="img/vinos/dvcatenachardonnay.jpg" alt="Vino dv catena chardonnay">
                     <div class="productos__box--item">
                       <h3>Dv Catena Chardonnay</h3>
                       <p>$3499</p>
-                      <a href="#" class="productos__box--btn">Comprar</a>
+                    </div>
+                    <div class="productos__box--comprar">
+                        <a href="#" class="productos__box--btn">Comprar</a>
                     </div>
                 </div>
                 <div class="productos__box">
-                    <img class="productos__box--img"  src="img/vinos/elenemigo.jpg" alt="...">
+                    <img class="productos__box--img"  src="img/vinos/elenemigo.jpg" alt="Vino El Enemigo">
                     <div class="productos__box--item">
-                      <h3>El Enemigo</h3>
+                      <h3>El Enemigo Chardonnay</h3>
                       <p>$2999</p>
-                      <a href="#" class="productos__box--btn">Comprar</a>
+                    </div>
+                    <div class="productos__box--comprar">
+                        <a href="#" class="productos__box--btn">Comprar</a>
                     </div>
                 </div>
                 <div class="productos__box">
-                    <img class="productos__box--img"  src="img/vinos/iscay_malbec_cabernet_2017.jpg" alt="...">
+                    <img class="productos__box--img"  src="img/vinos/iscay_malbec_cabernet_2017.jpg" alt="Vino Iscay Malbec">
                     <div class="productos__box--item">
-                      <h3>Trapiche Iscay 2017</h3>
+                      <h3>Trapiche Iscay C.2017</h3>
                       <p>$3349</p>
-                      <a href="#"class="productos__box--btn">Comprar</a>
+                    </div>
+                    <div class="productos__box--comprar">
+                        <a href="#" class="productos__box--btn">Comprar</a>
                     </div>
                 </div>
                 <div class="productos__box">
-                    <img class="productos__box--img"  src="img/vinos/la_linterna_malbec_2013_finca_el_milagro.jpg" alt="...">
+                    <img class="productos__box--img"  src="img/vinos/la_linterna_malbec_2013_finca_el_milagro.jpg" alt="Vino La Linterna Mlabec">
                     <div class="productos__box--item">
                       <h3>El Milagro La Linterna</h3>
                       <p>$2899</p>
-                      <a href="#" class="productos__box--btn">Comprar</a>
+                    </div>
+                    <div class="productos__box--comprar">
+                        <a href="#" class="productos__box--btn">Comprar</a>
                     </div>
                 </div>
                 <div class="productos__box">
-                    <img class="productos__box--img"  src="img/vinos/juan_de_dios.jpg" alt="...">
+                    <img class="productos__box--img"  src="img/vinos/juan_de_dios.jpg" alt="Vino Juan de Dios">
                     <div class="productos__box--item">
-                      <h3>Navarro Correas Juan de Dios</h3>
+                      <h3>N.Correas Juan de Dios</h3>
                       <p>$2875</p>
-                      <a href="#" class="productos__box--btn">Comprar</a>
+                    </div>
+                    <div class="productos__box--comprar">
+                        <a href="#" class="productos__box--btn">Comprar</a>
                     </div>
                 </div>
-            </section>        
-        </main>
+            </section>
+            <section class="selector">
+                <ul class="selector__paginas"> 
+                    <li class="selector__paginas--actual"><span>1</span></li>
+                      <li><a href=""><span>2</span></a></li>   
+                      <li><a href=""><span>3</span></a></li>   
+                      <li><a href=""><span>4</span></a></li>
+                      <li><a href=""><span>5</span></a></li>      
+                      <li> <a href="" title="Siguiente"><span>Siguiente</span></a></li>
+                </ul>
+            </section>
+        </div>         
+    </main>
     <!-- finalizado el main    -->   
-    </div>    
+       
     <!-- comienzo del footer -->
     <footer class="footer">
         <div class="footer__redes">

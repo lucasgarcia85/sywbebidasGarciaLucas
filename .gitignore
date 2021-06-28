@@ -2,5 +2,10 @@
 node_modules/
 =======
 node_modules/
+<<<<<<< HEAD
 
+>>>>>>> rama2
+=======
+package-lock.json
+package.json
 >>>>>>> rama2

@@ -16,19 +16,11 @@
 <body>
      <header id="header">
         <div class="header__barrasuperior">
-            <div>
-                <img src="img/home/logowh.png" alt="Logo S&W Bebidas" title="S&W Bebidas" id="header__logo">
-            </div> 
-            <div>
-                <img src="img/home/sywbebidaslogo.png" alt="foto direccion web" title="Syw-bebidas.com.ar" id="header__logowebhome"> 
-            </div>
-        </div>
-        <div class="header__navega">
             <nav class="navbar navbar-expand-lg navbar-light bg-xxxx">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="img/home/logobk.png" alt="Logo S&W Bebidas" title="S&W Bebidas" id="header__logonav"></a>
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="img/home/logowh.png" alt="Logo S&W Bebidas" title="S&W Bebidas" id="header__logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
@@ -56,35 +48,39 @@
     <!-- comienza main y contenido de pagina    -->    
     <main>
         <div class="fondoTituloHome">
-            <h1 class="center">S&W Bebidas</h1>
+            <div class="fondoTituloHome__div">
+                <div>
+                    <h1 id="HomeH1Anim">S&W BEBIDAS </h1> 
+                </div>
+            </div>
         </div>
         <div class="contenedor">
             <section class="carouselSize">
                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="1700">
-                        <img src="img/home/slider/spirits1a.jpg" class="d-block w-100" alt="...">
+                        <img src="img/home/slider/spirits1a.jpg" class="d-block w-100" alt="Bebidas espirituosas">
                       </div>
                       <div class="carousel-item" data-bs-interval="1700">
-                        <img src="img/home/slider/spirits2.jpg" class="d-block w-100" alt="...">
+                        <img src="img/home/slider/spirits2.jpg" class="d-block w-100" alt="Bebidas espirituosas">
                       </div>
                       <div class="carousel-item" data-bs-interval="1700">
-                        <img src="img/home/slider/variado2a.jpg" class="d-block w-100" alt="...">
+                        <img src="img/home/slider/variado2a.jpg" class="d-block w-100" alt="vinos y espirituosas">
                       </div>
                       <div class="carousel-item" data-bs-interval="1700">
-                        <img src="img/home/slider/licoresvar.jpg" class="d-block w-100" alt="...">
+                        <img src="img/home/slider/licoresvar.jpg" class="d-block w-100" alt="licores varios">
                       </div>
                       <div class="carousel-item" data-bs-interval="1700">
-                        <img src="img/home/slider/destiladosa.jpg" class="d-block w-100" alt="...">
+                        <img src="img/home/slider/destiladosa.jpg" class="d-block w-100" alt="bebidas destiladas">
                       </div>
                       <div class="carousel-item" data-bs-interval="1700">
-                        <img src="img/home/slider/vinos.jpg" class="d-block w-100" alt="...">
+                        <img src="img/home/slider/vinos.jpg" class="d-block w-100" alt="vinos varios">
                       </div>
                       <div class="carousel-item" data-bs-interval="1700">
-                        <img src="img/home/slider/variados3a.jpg" class="d-block w-100" alt="...">
+                        <img src="img/home/slider/variados3a.jpg" class="d-block w-100" alt="bebidas alcoholicas">
                       </div>
                       <div class="carousel-item" data-bs-interval="1700">
-                        <img src="img/home/slider/whisky4.jpg" class="d-block w-100" alt="...">
+                        <img src="img/home/slider/whisky4.jpg" class="d-block w-100" alt="Whiskey">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -99,100 +95,19 @@
             </section>
             <section>
                 <article class="quienesSomos">
-                    <p> Bienvenidos a S&W Bebidas. Un emprendimiento de venta de Spirits & Wines. Contamos con stock permanente de los destilados y los vinos mas sofisticados y consumidos. </p>
+                    <p> Bienvenidos a S&W Bebidas. Un emprendimiento de venta de Spirits & Wines con una trayectoria de más de 10 años. Trabajamos con bodegas de renombre, contando con las mejores marcas y calidad. Stock permanente de los destilados y los vinos mas sofisticados y consumidos. </p>
                 </article>
             </section>
-            <section class="flex">
-                <p>Te invitamos a conocer y tomar nota de estas deliciosas bebidas que te harán ser el alma de la fiesta, no puedes quedarte sin lucir como un verdadero mixólogo con tus amigos, de nada.</p>
-                <iframe src="https://www.youtube.com/embed/P-im5KEYXpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="iframeindex"></iframe>
-            </section>
         </div> 
-            <section class="recetas">
-                <h2>5 Deliciosas recetas de cócteles con bebidas espirituosas</h2>
-                <p>Aquí te presentamos un listado con las más famosas y deliciosos tragos o cócteles preparados con bebidas espirituosas. No te las puedes perder.</p>
-                <div class="recetas__grid">
-                    <details>
-                        <summary>Tom Collins</summary>
-                        <p> <b>Ingredientes de un Tom Collins</b> </p>
-                            <ul>
-                                <li>30 ml de ginebra</li>
-                                <li>20 ml de zumo de limón</li>
-                                <li> 15 ml de soda</li>
-                                <li>2 cucharadas de azúcar</li>
-                                <li> Hielo</li>
-                                <li>Una rodaja de limón</li>
-                            </ul>
-                        <p> Preparación: En un vaso alto, Tom Collins se coloca el hielo al gusto, luego se le agrega la ginebra, el zumo de limón, y la azúcar. Se revuelve un poco y se termina rellenando con soda. Por último, se decora con una rodaja de limón</p>
-                    </details>
-                    <details>
-                        <summary>Shirley Temple</summary>
-                        <p> <b>Ingredientes de un Shirley Temple</b> </p>
-                            <ul>
-                                <li>40 ml de Ginger ale</li>
-                                <li>20 ml de zumo de naranja</li>
-                                <li>Un chorro de granadina</li>
-                                <li>Una cereza marrasquino</li>
-                                <li>Hielo al gusto</li>
-                                <li>Una rodaja de limón</li>
-                            </ul>
-                        <p> En una coctelera se añade el zumo de naranja y el ginger ale
-                            Se agita enérgicamente por unos 15 segundos
-                            Luego se sirve en un vaso de vidrio con hielos al gusto
-                            Posteriormente se le agrega el chorro de granadina
-                            Y por último, se decora con una cereza y una rodaja de limón</p>
-                    </details>
-                    <details>
-                        <summary>Pisco Sour</summary>
-                        <p> <b>Ingredientes de un Pisco Sour</b> </p>
-                            <ul>
-                                <li>50 ml de pisco</li>
-                                <li>30 ml de jugo de limón</li>
-                                <li>30 ml de sirope de azúcar</li>
-                                <li>Una clara de huevo</li>
-                                <li>3 gotitas de Angostura</li>
-                                <li>Hielo al gusto</li>
-                            </ul>
-                        <p> En una coctelera se agrega hielo al gusto, y todos los ingredientes excepto la angostura
-                            Se agita enérgicamente durante unos 30 segundos. Luego se vierte en un vaso de vidrio, en el cual se debe notar como la bebida se divide en una parte liquida y otra parte de espuma. Si esto sucede, no se preocupe, así debe quedar la bebida.Luego se le coloca las gotas de angostura sobre la espuma.</p>
-                    </details>
-                    <details>
-                        <summary>Martini</summary>
-                        <p> <b>Ingredientes de un Martini</b> </p>
-                            <ul>
-                                <li>2 onzas de ginebra</li>
-                                <li>1 toque de vermú</li>
-                                <li>1 aceituna</li>
-                            </ul>
-                        <p> Preparación: Verter en una coctelera las dos onzas de ginebra
-                            Luego se le agrega el vermú.Posteriormente en una copa tipo Martini, se sirve la bebida
-                            Y se le coloca una aceituna verde, que debe quedar en el fondo de la copa</p>
-                    </details>
-                    <details>
-                        <summary>Margarita</summary>
-                        <p> <b>Ingredientes de un Margarita</b> </p>
-                            <ul>
-                                <li>35 ml de tequila</li>
-                                <li>15 ml de jugo de lima</li>
-                                <li>20 ml de triple seco</li>
-                                <li>Hielo</li>
-                                <li>Sal</li>
-                                <li>Una rodaja de limón</li>
-                            </ul>
-                        <p> En un recipiente plano colocar sal y en otro un poco de jugo de lima
-                            Agarrar la copa del margarita y boca abajo mojarlo con el jugo de lima
-                            Luego pasar la copa por el recipiente con la sal. En una coctelera se agrega hielo
-                            Posteriormente se coloca el tequila, el jugo de lima, y el triple seco
-                            Se agita enérgicamente por unos 15 segundos. Luego se vierte en la copa del margarita, previamente decorada. Se le agrega una rodaja de lima</p>
-                    </details>
-                </div>
-            </section>
             <section>
                 <div class="titulomedios">
                     <h2 class="center"> MEDIOS DE PAGO</h2>
                 </div>
-                <div class="flex">
-                    <img class="tarjetas" src="img/home/3 y 6 cuotas.png" alt="">
-                    <img class="tarjetas" src="img/home/tarjetas.png" alt="">
+                <div class="mediosContenedor">
+                    <div class="mediosContenedor__flexTarjetas">
+                        <img class="mediosContenedor__flexTarjetas--tarjetas" src="img/home/3y6cuotas.png" alt="Imagen 3 y 6 cuotas">
+                        <img class="mediosContenedor__flexTarjetas--tarjetas" src="img/home/tarjetas.png" alt="Tarjetas Visa y Mastercard">
+                    </div>
                 </div>
             </section>
             <section class="envios">
@@ -201,14 +116,19 @@
                     <P>Cajas y embalajes especificos para botellas</P>
                 </div>
                 <div class="envios__imag">
-                    <img src="img/home/envios.gif" alt="">
-                    <img src="img/home/cajaunabotella.jpg" alt="">
-                    <img src="img/home/cajavariosvinos.png" alt="">
+                    <div class="envios__imag--div">
+                        <img src="img/home/envios.gif" alt="Envios a todo el pais">
+                    </div>
+                    <div class="envios__imag--div">
+                        <img src="img/home/cajaunabotella.jpg" alt="embalajes especiales">
+                    </div>
+                    <div class="envios__imag--div">
+                        <img src="img/home/cajavariosvinos.png" alt="embalajes especiales">
+                    </div>
                 </div>
             </section>
      </main>
          <!-- finalizado el main    -->   
-     </div>
          <!-- comienzo del footer -->
         <footer class="footer">
             <div class="footer__redes">
@@ -219,7 +139,7 @@
                     <a href="mailto:Sywbebidas@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
                 </div>
                 <div>
-                    <p> Copyright S&W Bebidas. Desarrollos Web LGB</p>
+                    <p>  &copy Copyright 2021 S&W Bebidas. Desarrollos Web LGB</p>
                 </div>
             </div>
             <div class="footer__icontop">
