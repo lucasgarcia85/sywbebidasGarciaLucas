@@ -73,7 +73,8 @@
   grid-template-rows: 1fr;
   grid-gap: 40px;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  line-height: 30px; }
 
 .gridEspirituosas__texto__listaSquareInside {
   list-style-type: none;
@@ -603,7 +604,8 @@ h2 {
   /******* Fin pagina Contacto ****/
   /*************** Pagina Espirituosas****************/
   .gridEspirituosas__texto {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-gap: 2px; }
   .gridEspirituosas__images {
     grid-template-columns: 1fr; }
   .recetasVideo p {

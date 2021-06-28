@@ -393,6 +393,7 @@ body{
       /*************** Pagina Espirituosas****************/
       .gridEspirituosas__texto{
           grid-template-columns: 1fr;
+          grid-gap:2px ;
         }
       .gridEspirituosas__images{
           grid-template-columns: 1fr;
