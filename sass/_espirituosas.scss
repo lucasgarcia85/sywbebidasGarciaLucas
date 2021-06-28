@@ -33,7 +33,6 @@
             margin-top:  5px;
         }
 }
-
 .accordion-item {
     background-color: transparent;
     border: none;
@@ -41,7 +40,6 @@
   .accordion-button {
     background-color: transparent;
   }
-  
   .accordion-button:not(.collapsed) {
     color: black;
     background-color:transparent;
@@ -60,11 +58,11 @@
       text-align: justify;
       }
   }
-
   .recetasVideo {
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
     margin:40px 0px;
     p{
         width: 40%;
@@ -73,7 +71,6 @@
         text-align: justify;
     }
 }
-
 .recetas{
     background-color: $colornavegador;
     padding: 30px;

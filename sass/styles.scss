@@ -36,7 +36,6 @@ body{
       font-style: oblique;
       text-transform: uppercase;
     }
-  
   .textoDerecha{
       text-align: right;
   }
@@ -54,7 +53,6 @@ body{
       margin-top: 25px;
       margin-bottom:25px;
   }
-      
   /* fin clases generales */
   
   /************** INDEX *********************/
@@ -76,8 +74,6 @@ body{
         background-color: rgba(179, 11, 11, 0.5);
         }
   }
-
-
 #HomeH1Anim{
   animation: translateh1 1s linear .2s;
 }
@@ -85,8 +81,6 @@ body{
   0% {transform: translateX(100px);}
   100% {transform: translateX(0px);}
 }
-
-
 .quienesSomos{
     margin: 50px 0px;
   }
@@ -109,13 +103,10 @@ body{
             color:$colorhover ;
         }  
 }
-
 .carouselSize div img{
     height: 90%;
     width: 90%;
    }
-
-
 .mediosContenedor{
     display: flex;
     justify-content: center;
@@ -133,12 +124,10 @@ body{
             }
       }
 }
-
 #iframeindex{
     width: 40%;
     height: 300px;
 }
-
 .envios{
     background-color:$colornavegador;
       .envios__titulo{
@@ -163,7 +152,6 @@ body{
               }
       }
 }
-
  // compartido vinos y espirituosas//
  .tituloProductos{
   display: flex;
@@ -174,7 +162,6 @@ body{
   height: 80px;
   margin:30px 0px;
 }
-
  .productos{
   display: grid;
   justify-items: center;
@@ -183,8 +170,7 @@ body{
   gap: 20px;
   padding: 5px;
   width: 100%;
- 
-  .productos__box{
+ .productos__box{
       width: 13rem;
       text-align: center;
       &:hover{
@@ -192,7 +178,6 @@ body{
           border-radius: 1rem;
           overflow: hidden;
         }
-      
       .productos__box--img{
           width: 100%;
       }
@@ -203,7 +188,6 @@ body{
           padding: 10px;
           height: 6rem;
           }
-
       .productos__box--comprar {
         display: flex;
         flex-flow: column nowrap;
@@ -212,7 +196,6 @@ body{
         justify-content: flex-end;
         height: 4rem;
         margin-bottom: 1rem;
-      
             .productos__box--btn{
                 text-decoration: none;
                 background-color:rgb(37, 32, 32) ;
@@ -229,7 +212,6 @@ body{
 
   }
 }
-
 .selector {
   display: flex;
   flex-flow: row nowrap;
@@ -238,11 +220,9 @@ body{
     .selector__paginas{
       list-style: none;
       display: flex;
-
         .selector__paginas--actual{
           color:$colornavegadoritems
         }
-
         li{
           margin-right: 5px;
             a{
@@ -253,38 +233,33 @@ body{
     }
 }
 
-
-// compartido vinos con espirituosas
+// Fin compartido vinos con espirituosas
 
   /*****************************MEDIA QUERYS***************************************/
   /*****************************MEDIA QUERYS***************************************/
+   /*****************************MEDIA QUERYS***************************************/
   
 @media only screen and (max-width: 767px) {
       
-     
         section article img{
                 width: 100%;
         }
         section iframe{
                 width: 100%;
         }
-                        
         .carouselSize div img{
         height: 100%;
         width: 100%;
         }
-         
         #iframeindex{
         width: 100%;
         height: 300px;
-        
         }
         
 /***********pagina Espirituosas***********/
         .gridEspirituosas__texto{
           grid-template-columns: 1fr;
         }
-  
         .gridEspirituosas__images{
           grid-template-columns: 1fr 1fr;
         }
@@ -297,7 +272,6 @@ body{
          }
   
 /********************* VINOS **************/
-        
         .img-fluid{
           margin: 10px 0px;
           }
@@ -306,8 +280,7 @@ body{
             .productos__box{
               width: 13rem;
             }                  
-           
-          }
+        }
         
 
 /**************PAGINA CONTACTO ************/
@@ -330,7 +303,6 @@ body{
       }
 }
 /*****footer**********/
-
           .footer {
                 .footer__icontop .back_to_top{
                         animation: arrowup 2s linear 0s infinite; 
@@ -350,8 +322,7 @@ body{
                   }
           }
 }
- 
-  /**************************480px**********************/
+   /**************************480px**********************/
 @media only screen and (max-width: 480px) {
   
   // Comun a todas los HTML
@@ -360,11 +331,9 @@ body{
   .fondoTituloHome,.fondoTituloVinos,.fondoTituloEspirituosas,.fondoTituloPromociones,.fondoTituloContacto  {
     height: $anchoDivTitulo;
   }
-
   h1 {
     font-size: 2.2rem;
   }
-       
   .footer {
   
         .footer__redes{
@@ -379,7 +348,6 @@ body{
             color: $colorhover;
             }
     }
-                 
   /****************INDEX*******************/
   
   /******Menu Hamburguesa mas pequeño******/
@@ -387,9 +355,7 @@ body{
   .navbar-light .navbar-toggler-icon {
    width: 2em;
   }
-
   /******Menu Hamburguesa mas pequeño******/
-
       #HomeH1Anim{
       animation: translateh1 1s linear .2s;
       }
@@ -398,7 +364,6 @@ body{
       50% {transform: scale(1.2);}
       100% {transform: scale(1.0);}
       }
-  
       section article img{
               width: 100%;
       }
@@ -415,8 +380,6 @@ body{
                 }
            }
      } 
-    
-
       /*********** pagina Contacto**************/
       .newsLetter{
           margin-bottom: 20px;
@@ -431,7 +394,6 @@ body{
       .gridEspirituosas__texto{
           grid-template-columns: 1fr;
         }
-  
       .gridEspirituosas__images{
           grid-template-columns: 1fr;
         }
@@ -439,7 +401,6 @@ body{
           line-height: 30px;
           text-align: justify;
         }
-
         /**************pagina vinos***************/
         .vinos .vinos__infoImagenes{
           display: grid;
@@ -447,7 +408,6 @@ body{
           grid-gap: 20px;
           align-content: center;
           height: auto;
-
               img{
                 width: 95%;
                 }

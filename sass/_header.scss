@@ -8,13 +8,11 @@
     text-align: center;
  }
 .navbar-light {
-
     .navbar-toggler-icon {
         background-image:url(../img/hamburg2.png);
         width: 2.5em;
         height: 2.5em;
     }
-
     .navbar-toggler {
         color: $colornavegadoritems;
     }
@@ -32,9 +30,7 @@
                 background-repeat: no-repeat;
                 background-size: 0% 2px;
                 transition: background-size .3s;
-            
-            
-            }
+             }
         .nav-link:hover {
                 background-size: 100% 2px;
                 color:$colornavegadoritemsactivo;
@@ -56,7 +52,6 @@
         padding: 0px 6px;
     } 
  } 
-
  .navbar-collapse {
         flex-grow: 0;
  }
