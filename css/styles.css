@@ -23,16 +23,19 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  padding-top: 1.2rem; }
+  padding-top: 1.2rem;
+  gap: 10px; }
   .contacto .contacto__form {
     margin-right: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    min-width: 43%; }
     .contacto .contacto__form .forminputs {
-      width: 90%;
+      width: 70%;
       margin-top: .5rem;
       border-radius: 5px; }
   .contacto .contacto__maps {
-    margin-left: 20px; }
+    margin-left: 20px;
+    min-width: 43%; }
     .contacto .contacto__maps div iframe {
       width: 100%;
       height: 450px; }
